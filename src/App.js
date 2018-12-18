@@ -1,26 +1,43 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+
+import About from "./components/About/about";
+import Home from "./components/Home/home";
+import Projects from "./components/Projects/projects"
+import Navigation from "./components/Navigation/navigation"
+
+
 
 class App extends Component {
+
+  authenticate(){
+  return new Promise(resolve => setTimeout(resolve, 1000))
+}
+  componentDidMount(){
+     this.authenticate().then(() => {
+        const loading = document.getElementById('ipl-progress-indicator')
+        if(loading){
+          loading.classList.add('available')
+          setTimeout(() => {
+            loading.outerHTML = ''
+          }, 2000)
+        }
+      })
+    }
+
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <BrowserRouter>
+        <div>
+        <Navigation />
+        <Switch>
+          <Route path="/" component={Home} exact />
+          <Route path="/about" component={About}/>
+          <Route path="/projects" component={Projects}/>
+        </Switch>
+        </div>
+      </BrowserRouter>
     );
   }
 }
