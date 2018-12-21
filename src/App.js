@@ -3,9 +3,9 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import About from "./components/About/about";
 import Home from "./components/Home/home";
-import Projects from "./components/Projects/projects"
-import Navigation from "./components/Navigation/navigation"
-
+import Projects from "./components/Projects/projects";
+import Navigation from "./components/Navigation/navigation";
+import Contact from "./components/Contact/contact"
 
 
 class App extends Component {
@@ -35,6 +35,7 @@ class App extends Component {
           <Route path="/" component={Home} exact />
           <Route path="/about" component={About}/>
           <Route path="/projects" component={Projects}/>
+          <Route path="/contact" component={Contact}/>
         </Switch>
         </div>
       </BrowserRouter>
