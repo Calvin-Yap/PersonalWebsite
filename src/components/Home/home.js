@@ -8,7 +8,12 @@ class Home extends React.Component{
         return (
           <div>
           <p class="line-1 anim-typewriter">Hi, I am Calvin Yap</p>
-          <p> Ryerson Computer Science Student </p>
+            <div className="links">
+            <a className="links" href="https://github.com/Calvin-Yap">Github</a>
+            <a className="links" href="linkedman">Linkedin</a>
+            <a className="links" href="linkedman">Resume</a>
+            <a className="links" href="linkedman">Email</a>
+            </div>
           </div>
     )
   }

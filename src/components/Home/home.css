@@ -21,3 +21,24 @@
   from{border-right-color:#ffffff;}
   to{border-right-color: transparent;}
 }
+
+
+
+
+
+div.links{
+  margin-left:37%;
+
+
+}
+
+a.links{
+  padding-right: 6%;
+  text-decoration: none;
+  color: #000000;
+}
+a.links:hover{
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+}
