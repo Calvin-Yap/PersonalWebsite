@@ -10,7 +10,7 @@ import Contact from "./components/Contact/contact"
 
 class App extends Component {
 
-  authenticate(){
+/*  authenticate(){
   return new Promise(resolve => setTimeout(resolve, 1000))
 }
   componentDidMount(){
@@ -24,7 +24,7 @@ class App extends Component {
         }
       })
     }
-
+*/
 
   render() {
     return (

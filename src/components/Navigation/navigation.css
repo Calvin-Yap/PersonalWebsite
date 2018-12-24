@@ -11,13 +11,13 @@ div.nav{
     padding-bottom: 1.5%;
 }
 .normal{
+    text-decoration: none;
     float: none;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     font-size: 325%;
     display:inline-block;
     line-height: normal;
-    text-decoration: none;
     color: #ffffff;
     overflow: hidden;
     -o-transition:.7s;
@@ -28,5 +28,6 @@ div.nav{
     padding-right: 6%;
 }
 a.normal:hover{
+  text-decoration: none;
   color: blue;
 }
