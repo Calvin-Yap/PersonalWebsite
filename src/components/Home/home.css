@@ -14,11 +14,11 @@ html, body {
 }
 
 div.links{
-  padding-left: 40%;
+  padding-left: 41%;
 }
 
 a.links{
-  padding-right: 6%;
+  padding-right: 7%;
   text-decoration: none;
 
   color: #000000;
@@ -110,4 +110,18 @@ i {
   margin-left: 15%;
   margin-top: 15%;
   text-align: center;
+}
+
+.fontawesome{
+color:#bfbfbf;
+-o-transition:.7s;
+-ms-transition:.7s;
+-moz-transition:.7s;
+-webkit-transition:.7s;
+transition: .7s;
+}
+
+.fontawesome:hover{
+  transform: scale(1.5);
+  color:#83aff7;
 }

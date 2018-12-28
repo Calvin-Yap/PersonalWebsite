@@ -4,7 +4,8 @@ import Typing from 'react-typing-animation';
 import Slide from './Slide'
 import LeftArrow from './LeftArrow'
 import RightArrow from './RightArrow'
-import { Jumbotron} from 'reactstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 
 class Home extends React.Component{
   constructor(props) {
@@ -12,6 +13,7 @@ class Home extends React.Component{
 
   this.state = {
     images: [
+      "https://i.imgur.com/BoloeNc.gif",
       "https://images.unsplash.com/photo-1500993855538-c6a99f437aa7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
       "https://images.unsplash.com/photo-1545394752-435e18743cae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
       "https://images.unsplash.com/photo-1545450659-8f9ecd13559d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
@@ -59,11 +61,12 @@ slideWidth = () => {
           <Typing.Speed ms={30} />
             <span>Hi, I am Calvin Yap</span>
           </Typing>
+          <br/>
           <div className="links">
-          <a className="links" href="https://github.com/Calvin-Yap">Github</a>
-          <a className="links" href="linkedman">Linkedin</a>
-          <a className="links" href="linkedman">Resume</a>
-          <a className="links" href="linkedman">Email</a>
+          <a className="links" href="https://github.com/Calvin-Yap"><FontAwesomeIcon className="fontawesome" icon={['fab', 'github']} size="2x" /></a>
+          <a className="links" href="linkedman"><FontAwesomeIcon className="fontawesome" icon={['fab', 'linkedin']} size="2x" /></a>
+          <a className="links" href="linkedman"><FontAwesomeIcon className="fontawesome" icon={['fas', 'file']} size="2x" /></a>
+          <a className="links" href="linkedman"><FontAwesomeIcon className="fontawesome"icon={['fas', 'envelope']} size="2x" /></a>
           </div>
           <br/>
           <br/>
@@ -112,7 +115,6 @@ slideWidth = () => {
     <p>Made by Calvin Yap </p>
     <p>&copy; 2018 Calvin Yap</p>
     </footer>
-
 </div>
     );
   }
