@@ -1,26 +1,38 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
 html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
+.background{
+  background-image: url("https://images.unsplash.com/photo-1500993855538-c6a99f437aa7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .Typer{
-    padding-left: 37%;
+    padding-left: 35%;
     font-size: 500%;
     color: black;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    padding-top: 2%;
+    padding-bottom: 1%;
 }
+
 .down{
   margin-top: 7%;
 }
 
 div.links{
   padding-left: 41%;
+  margin-bottom: 3%;
 }
 
 a.links{
   padding-right: 7%;
   text-decoration: none;
-
   color: #000000;
 }
 
@@ -31,11 +43,11 @@ a.links{
   box-shadow: 3px 0px 0px  black, 0 0 3px black;
 }
 .slider {
-  margin-left: 15%;
+  margin-left: 11%;
   border: 2px black solid;
   border-radius: 40px;
   position: relative;
-  width: 700px;
+  width: 800px;
   height: 500px;
   overflow: hidden;
   white-space: nowrap;
@@ -108,10 +120,21 @@ i {
 
 .shifter{
   margin-left: 15%;
-  margin-top: 15%;
+  margin-top: 5%;
+}
+.montserrat{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 300%;
+  font-weight: bold;
+}
+.montserrat1{
+  margin-top: 5%;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 500%;
+  font-weight: bold;
   text-align: center;
 }
-
 .fontawesome{
 color:#bfbfbf;
 -o-transition:.7s;
@@ -124,4 +147,62 @@ transition: .7s;
 .fontawesome:hover{
   transform: scale(1.5);
   color:#83aff7;
+}
+.bottomlinks{
+  margin-right: 1%;
+  padding-left: 1%;
+}
+footer{
+  padding-top: 2%;
+  background: #000000;
+  color: white;
+  padding-bottom: 4%;
+  text-align: center;
+}
+.aboutlink{
+  color: white;
+  text-decoration: none;
+}
+.aboutlink:hover{
+  text-decoration: none;
+  color:white;
+}
+.hrstyle{
+  border-top: 3px double white;
+}
+.card{
+padding: 4%;
+border: 1px black solid;
+}
+.card:hover{
+  transition: .8s;
+  transform: scale(1.1);
+      box-shadow: 0 0 25px 0 black;
+}
+.title{
+  font-size: 200%;
+  font-weight: bold;
+}
+.buttonColor{
+background-color: #bfbfbf;
+}
+.centre{
+  text-align: center;
+  padding: 2%;
+}
+.imgslide{
+
+}
+.margin{
+  margin-left: 40%;
+  margin-right: 40%;
+}
+.slick-prev {
+  left: 5% !important;
+  z-index: 1;
+}
+.slick-next {
+  color: black;
+  right: 5% !important;
+  z-index: 1;
 }

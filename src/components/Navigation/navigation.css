@@ -29,11 +29,8 @@ a.normal{
     transition: .7s;
     padding-right: 6%;
 
-
 }
 a.normal:hover{
   text-decoration: none;
   color: yellow;
-
-
 }
