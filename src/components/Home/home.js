@@ -18,8 +18,8 @@ class Home extends React.Component{
 
   this.state = {
     images: [
-      "https://i.imgur.com/BoloeNc.gif",
       "https://images.unsplash.com/photo-1500993855538-c6a99f437aa7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      "https://i.imgur.com/BoloeNc.gif",
       "https://images.unsplash.com/photo-1545394752-435e18743cae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
       "https://images.unsplash.com/photo-1545450659-8f9ecd13559d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
     ],
@@ -88,12 +88,54 @@ slideWidth = () => {
          <div className="shifter">
          <h1 className="montserrat">About Me. </h1>
          <hr className="hrstyle"/>
-         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+         <p className="paragraph">Hi, welcome to my page!</p>
+         <p className="paragraph">
+         I am a second year Computer Science student studying at Ryerson University. I enjoy long walks with my dog,
+         practicing martial arts, playing frisbee, and many other things. I am currently interested in the fileds of artifical intelligence and data sciences. Also, I am always eager and excited
+         to learn new things and create new projects that both further my learning and to help others. </p>
+         <div className="row">
+         <div className="column5" >
+         <FontAwesomeIcon className="nicole" icon={['fas', 'code']} size="2x" />
+         <p className="icons">Coding</p>
+         <p>hi buddy </p>
+         <FontAwesomeIcon className="nicole" icon={['fas', 'medal']} size="2x" />
+         <p className="icons">Sports</p>
+         <p>hi buddy </p>
+         </div>
+         <div className="column5">
+         <FontAwesomeIcon className="nicole"icon={['fas', 'dumbbell']} size="2x" />
+         <p className="icons">Fitness</p>
+         <p>hi buddy </p>
+         <FontAwesomeIcon className="nicole" icon={['far', 'smile']} size="2x" />
+         <p className="icons">Hobbies</p>
+         <p>hi buddy </p>
+         </div>
+         <div className="column5">
+         <FontAwesomeIcon className="nicole" icon={['fas', 'dog']} size="2x" />
+         <p className="icons">Pets</p>
+         <p>hi buddy </p>
+         <FontAwesomeIcon className="nicole"icon={['fas', 'briefcase']} size="2x" />
+         <p className="icons">Work</p>
+         <p>hi buddy </p>
+         </div>
          <br/>
-         <Button color="primary" size="lg"><NavLink className="aboutlink" to="/about">Learn More</NavLink></Button>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <Button className="btn-custom"  size="lg"><NavLink className="aboutlink" to="/about">Learn More</NavLink></Button>
+         </div>
          </div>
        </div>
-       <div className="column">
+       <div className="column6">
          <div className="slider">
          <div className="slider-wrapper"
            style={{
@@ -118,86 +160,77 @@ slideWidth = () => {
      </div>
    </div>
        </div>
+    <h1 className="montserrat1"> Projects</h1>
+      <div className="blackboard1">
+            <p className="paragraph1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <Container>
+        <Row>
+        <Col xs="6" sm="4">
+        <Card className="white">
+          <CardImg top width="100%" src="https://i.imgur.com/6wFFao9.png" alt="Card image cap" />
+          <CardBody>
+            <CardTitle className="title">Java Projects</CardTitle>
+            <hr/>
+            <CardSubtitle>Card subtitle</CardSubtitle>
+            <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+            <Button className="btn-custom"><NavLink className="aboutlink" to="/projects">Learn More</NavLink></Button>
+          </CardBody>
+        </Card>
+        </Col>
+        <Col xs="6" sm="4">
+        <Card className="white">
+          <CardImg top width="100%" src="https://images.unsplash.com/photo-1529101091764-c3526daf38fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1491&q=80" alt="Card image cap" />
+          <CardBody>
+            <CardTitle className="title">Web Development </CardTitle>
+            <hr/>
+            <CardSubtitle>Card subtitle</CardSubtitle>
+            <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+            <Button className="btn-custom"><NavLink className="aboutlink" to="/projects">Learn More</NavLink></Button>
+          </CardBody>
+        </Card>
+        </Col>
+        <Col xs="6" sm="4">
+        <Card className="white">
+          <CardImg top width="99%" src="https://i.imgur.com/K5sF62o.png" alt="Card image cap" />
+          <CardBody>
+            <CardTitle className="title">Hackathons and Other</CardTitle>
+            <hr/>
+            <CardSubtitle>Card subtitle</CardSubtitle>
+            <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+           <Button className="btn-custom"><NavLink className="aboutlink" to="/projects">Learn More</NavLink></Button>
+          </CardBody>
+        </Card>
+        </Col>
+        </Row>
+        </Container>
 
-    <div>
-
-      <h1 className="montserrat1"> Projects.</h1>
-
-      <p className="centre">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-
-      <Container>
-      <Row>
-      <Col xs="6" sm="4">
-      <Card>
-        <CardImg top width="100%" src="https://i.imgur.com/6wFFao9.png" alt="Card image cap" />
-        <CardBody>
-          <CardTitle className="title">Java Projects</CardTitle>
-          <hr/>
-          <CardSubtitle>Card subtitle</CardSubtitle>
-          <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-          <Button color="info"><NavLink className="aboutlink" to="/projects">Learn More</NavLink></Button>
-        </CardBody>
-      </Card>
-      </Col>
-      <Col xs="6" sm="4">
-      <Card>
-        <CardImg top width="100%" src="https://images.unsplash.com/photo-1529101091764-c3526daf38fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1491&q=80" alt="Card image cap" />
-        <CardBody>
-          <CardTitle className="title">Web Development </CardTitle>
-          <hr/>
-          <CardSubtitle>Card subtitle</CardSubtitle>
-          <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-          <Button color="info"><NavLink className="aboutlink" to="/projects">Learn More</NavLink></Button>
-        </CardBody>
-      </Card>
-      </Col>
-      <Col xs="6" sm="4">
-      <Card>
-        <CardImg top width="99%" src="https://i.imgur.com/K5sF62o.png" alt="Card image cap" />
-        <CardBody>
-          <CardTitle className="title">Hackathons and Other</CardTitle>
-          <hr/>
-          <CardSubtitle>Card subtitle</CardSubtitle>
-          <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-         <Button color="info"><NavLink className="aboutlink" to="/projects">Learn More</NavLink></Button>
-        </CardBody>
-      </Card>
-      </Col>
-      </Row>
-      </Container>
-
-      <h1 > Gallery</h1>
-      <p className="centre">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-<div className="boxshadow">
-      <Slider className="margin"{...settings}>
-      <div>
-      <img className="imgslide"src="http://placekitten.com/g/400/200" />
-      </div>
-      <div>
-      <img className="imgslide" src="http://placekitten.com/g/400/200" />
-      </div>
-      <div>
-      <img  className="imgslide" src="http://placekitten.com/g/400/200" />
-      </div>
-      <div>
-      <img  className="imgslide" src="http://placekitten.com/g/400/200" />
-      </div>
-      </Slider>
-      </div>
-      <br/>
-      <br/>
-      <br/>
     </div>
 
 
+    <h1 className="bigText"> Gallery</h1>
     <div className="row">
-    <div className="column">
-
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-
+    <div className="column1">
+    <div className="blackboard">
+    <p className="paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
     </div>
-    <div className="column">
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+    <div className="column2">
+    <div className="grain">
+    <Slider className="margin"{...settings}>
+    <div>
+    <img className="imgslide"src="http://placekitten.com/g/400/200" />
+    </div>
+    <div>
+    <img className="imgslide" src="http://placekitten.com/g/400/200" />
+    </div>
+    <div>
+    <img  className="imgslide" src="http://placekitten.com/g/400/200" />
+    </div>
+    <div>
+    <img  className="imgslide" src="http://placekitten.com/g/400/200" />
+    </div>
+    </Slider>
+     </div>
     </div>
     </div>
 

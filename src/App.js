@@ -7,9 +7,10 @@ import Projects from "./components/Projects/projects";
 import Navigation from "./components/Navigation/navigation";
 import Contact from "./components/Contact/contact"
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faFile, faEnvelope} from '@fortawesome/free-solid-svg-icons'
+import { faSmile } from '@fortawesome/free-regular-svg-icons';
+import { faFile, faEnvelope, faCode, faMedal, faDumbbell, faDog, faBriefcase} from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin,faGithub } from '@fortawesome/free-brands-svg-icons';
-library.add(faFile,faEnvelope,faLinkedin,faGithub);
+library.add(faFile,faEnvelope,faLinkedin,faGithub, faCode, faMedal, faDumbbell,faSmile,faDog,faBriefcase);
 class App extends Component {
 
 /*  authenticate(){

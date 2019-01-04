@@ -5,7 +5,7 @@ div.nav{
     position: fixed;
     z-index: 9999;
     top: 0;
-    background: #000000;
+    background: #22252C;
     color:#ffffff;
     padding-left: 70%;
     box-shadow: 0 0 25px 0 black;
@@ -32,5 +32,5 @@ a.normal{
 }
 a.normal:hover{
   text-decoration: none;
-  color: yellow;
+  color: #E14658;
 }
