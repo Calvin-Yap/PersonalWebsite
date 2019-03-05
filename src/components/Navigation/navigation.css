@@ -7,10 +7,14 @@ div.nav{
     top: 0;
     background: #22252C;
     color:#ffffff;
-    padding-left: 70%;
+    padding-left: 60%;
     box-shadow: 0 0 25px 0 black;
     padding-top: 1.5%;
     padding-bottom: 1.5%;
+    overflow: hidden;
+    max-width: 100%;
+    min-width: 1500px; 
+
 }
 a.normal{
     text-decoration: none;
