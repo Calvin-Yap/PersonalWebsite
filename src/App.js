@@ -8,9 +8,9 @@ import Navigation from "./components/Navigation/navigation";
 import Contact from "./components/Contact/contact"
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faSmile } from '@fortawesome/free-regular-svg-icons';
-import { faFile, faEnvelope, faCode, faMedal, faDumbbell, faDog, faBriefcase} from '@fortawesome/free-solid-svg-icons'
-import { faLinkedin,faGithub } from '@fortawesome/free-brands-svg-icons';
-library.add(faFile,faEnvelope,faLinkedin,faGithub, faCode, faMedal, faDumbbell,faSmile,faDog,faBriefcase);
+import { faFile, faEnvelope, faCode, faMedal, faDumbbell, faDog, faHeadphones} from '@fortawesome/free-solid-svg-icons'
+import { faLinkedin,faGithub,faJava,faDev } from '@fortawesome/free-brands-svg-icons';
+library.add(faFile,faEnvelope,faLinkedin,faGithub, faCode, faMedal, faDumbbell,faSmile,faDog,faHeadphones,faJava,faDev);
 class App extends Component {
 
 /*  authenticate(){

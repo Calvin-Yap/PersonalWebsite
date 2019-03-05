@@ -71,10 +71,23 @@ slideWidth = () => {
         return (
           <div className="down">
           <ScrollUpButton />
-          <Typing className="Typer">
+          <Typing loop="true" className="Typer">
           <Typing.Speed ms={50} />
-            <span>Hi, I am Calvin Yap</span>
-          </Typing>
+          <span>Hi, I am Calvin Yap</span>
+          <Typing.Reset count={1} delay={1500} />
+          <span>I like to make stuff</span>
+          <Typing.Delay ms={1500} />
+          <Typing.Backspace count={10} />
+          <span>code projects</span>
+            <Typing.Delay ms={1500} />
+            <Typing.Backspace count={13} />
+            <span>cook food</span>
+            <Typing.Delay ms={1500} />
+            <Typing.Backspace count={20} />
+            <Typing.Reset count={1} delay={500} />
+            <span>Welcome to my page</span>
+          <Typing.Delay ms={5000} />
+        </Typing>
           <div className="links">
           <a className="links" href="https://github.com/Calvin-Yap"><FontAwesomeIcon className="fontawesome" icon={['fab', 'github']} size="2x" /></a>
           <a className="links" href="linkedman"><FontAwesomeIcon className="fontawesome" icon={['fab', 'linkedin']} size="2x" /></a>
@@ -93,34 +106,27 @@ slideWidth = () => {
          I am a second year Computer Science student studying at Ryerson University. I enjoy long walks with my dog,
          practicing martial arts, playing frisbee, and many other things. I am currently interested in the fileds of artifical intelligence and data sciences. Also, I am always eager and excited
          to learn new things and create new projects that both further my learning and to help others. </p>
-         <div className="row">
+       <p className="interests"> Interests </p>
+        <div className="row">
          <div className="column5" >
-         <FontAwesomeIcon className="nicole" icon={['fas', 'code']} size="2x" />
-         <p className="icons">Coding</p>
-         <p>hi buddy </p>
+         <FontAwesomeIcon className="nicole" icon={['fab', 'dev']} size="2x" />
+         <p className="icons">Web Dev</p>
          <FontAwesomeIcon className="nicole" icon={['fas', 'medal']} size="2x" />
          <p className="icons">Sports</p>
-         <p>hi buddy </p>
+
          </div>
          <div className="column5">
          <FontAwesomeIcon className="nicole"icon={['fas', 'dumbbell']} size="2x" />
          <p className="icons">Fitness</p>
-         <p>hi buddy </p>
-         <FontAwesomeIcon className="nicole" icon={['far', 'smile']} size="2x" />
-         <p className="icons">Hobbies</p>
-         <p>hi buddy </p>
+         <FontAwesomeIcon className="nicole" icon={['fab', 'java']} size="2x" />
+         <p className="icons">Java</p>
          </div>
          <div className="column5">
          <FontAwesomeIcon className="nicole" icon={['fas', 'dog']} size="2x" />
-         <p className="icons">Pets</p>
-         <p>hi buddy </p>
-         <FontAwesomeIcon className="nicole"icon={['fas', 'briefcase']} size="2x" />
-         <p className="icons">Work</p>
-         <p>hi buddy </p>
+         <p className="icons">Dogs</p>
+         <FontAwesomeIcon className="nicole"icon={['fas', 'headphones']} size="2x" />
+         <p className="icons">Music</p>
          </div>
-         <br/>
-         <br/>
-         <br/>
          <br/>
          <br/>
          <br/>
