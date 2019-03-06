@@ -18,10 +18,11 @@ class Home extends React.Component{
 
   this.state = {
     images: [
-      "https://images.unsplash.com/photo-1500993855538-c6a99f437aa7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-      "https://i.imgur.com/BoloeNc.gif",
-      "https://images.unsplash.com/photo-1545394752-435e18743cae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
-      "https://images.unsplash.com/photo-1545450659-8f9ecd13559d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+      "https://i.imgur.com/uv8YXG8.jpg",
+      "https://i.imgur.com/ymn1dhu.jpg",
+      "https://i.imgur.com/0YJWGUj.jpg",
+      "https://i.imgur.com/SRpfis6.jpg",
+      "https://i.imgur.com/3kjSDJU.jpg"
     ],
     currentIndex: 0,
     translateValue: 0
@@ -74,22 +75,28 @@ slideWidth = () => {
           <Typing loop="true" className="Typer">
           <Typing.Speed ms={50} />
           <span>Hi, I am Calvin Yap</span>
-          <Typing.Reset count={1} delay={1500} />
+          <Typing.Reset count={1} delay={2000} />
           <span>I like to make stuff</span>
           <Typing.Delay ms={1500} />
           <Typing.Backspace count={10} />
           <span>code projects</span>
             <Typing.Delay ms={1500} />
             <Typing.Backspace count={13} />
+            <span>create Java Apps</span>
+              <Typing.Delay ms={1500} />
+              <Typing.Backspace count={16} />
             <span>cook food</span>
             <Typing.Delay ms={1500} />
-            <Typing.Backspace count={20} />
+            <Typing.Backspace count={9}/>
+            <span>play sports</span>
+            <Typing.Delay ms={1500} />
+            <Typing.Backspace count={25} />
             <Typing.Reset count={1} delay={500} />
-            <span>Welcome to my page</span>
+            <span>Welcome to my page!</span>
           <Typing.Delay ms={5000} />
         </Typing>
           <div className="links">
-          <a className="links" href="https://github.com/Calvin-Yap"><FontAwesomeIcon className="fontawesome" icon={['fab', 'github']} size="2x" /></a>
+          <a className="links" href="https://github.com/Calvin-Yap" target="_blank"><FontAwesomeIcon className="fontawesome" icon={['fab', 'github']} size="2x"/></a>
           <a className="links" href="linkedman"><FontAwesomeIcon className="fontawesome" icon={['fab', 'linkedin']} size="2x" /></a>
           <a className="links" href="linkedman"><FontAwesomeIcon className="fontawesome" icon={['fas', 'file']} size="2x" /></a>
           <a className="links" href="linkedman"><FontAwesomeIcon className="fontawesome"icon={['fas', 'envelope']} size="2x" /></a>
@@ -168,17 +175,16 @@ slideWidth = () => {
        </div>
     <h1 className="montserrat1"> Projects</h1>
       <div className="blackboard1">
-            <p className="paragraph1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        <Container>
+        <p className="paragraph2"> Feel free to browse through my projects, I'm always working on something new 💡</p>
+            <Container>
         <Row>
         <Col xs="6" sm="4">
         <Card className="white">
           <CardImg top width="100%" src="https://i.imgur.com/6wFFao9.png" alt="Card image cap" />
           <CardBody>
-            <CardTitle className="title">Java Projects</CardTitle>
+            <CardTitle className="title">Java Projects ☕️</CardTitle>
             <hr/>
-            <CardSubtitle>Card subtitle</CardSubtitle>
-            <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+            <CardText className="center1">Programs made with Java and Eclipse</CardText>
             <Button className="btn-custom"><NavLink className="aboutlink" to="/projects">Learn More</NavLink></Button>
           </CardBody>
         </Card>
@@ -187,10 +193,9 @@ slideWidth = () => {
         <Card className="white">
           <CardImg top width="100%" src="https://images.unsplash.com/photo-1529101091764-c3526daf38fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1491&q=80" alt="Card image cap" />
           <CardBody>
-            <CardTitle className="title">Web Development </CardTitle>
+            <CardTitle className="title">Web Development 💻</CardTitle>
             <hr/>
-            <CardSubtitle>Card subtitle</CardSubtitle>
-            <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+            <CardText className="center1">Web / Mobile Development projects</CardText>
             <Button className="btn-custom"><NavLink className="aboutlink" to="/projects">Learn More</NavLink></Button>
           </CardBody>
         </Card>
@@ -199,10 +204,9 @@ slideWidth = () => {
         <Card className="white">
           <CardImg top width="99%" src="https://i.imgur.com/K5sF62o.png" alt="Card image cap" />
           <CardBody>
-            <CardTitle className="title">Hackathons and Other</CardTitle>
+            <CardTitle className="title">Hackathons 🏅</CardTitle>
             <hr/>
-            <CardSubtitle>Card subtitle</CardSubtitle>
-            <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+            <CardText className="center1">Projects created during Hackathons</CardText>
            <Button className="btn-custom"><NavLink className="aboutlink" to="/projects">Learn More</NavLink></Button>
           </CardBody>
         </Card>
@@ -213,7 +217,7 @@ slideWidth = () => {
     </div>
 
 
-    <h1 className="bigText"> Gallery</h1>
+    <h1 className="bigText"> My Life</h1>
     <div className="row">
     <div className="column1">
     <div className="blackboard">
