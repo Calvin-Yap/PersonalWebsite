@@ -42,11 +42,6 @@ background-size: cover;
 }
 
 
-.aboutlinks:hover{
-    background: black;
-    color: white;
-}
-
 .text{
     font-size: 130%;
     margin-left: 25%;
@@ -68,3 +63,26 @@ background-size: cover;
     height: auto;
     margin-bottom: 2%;
 }
+
+
+
+.Collapsible__trigger {
+  font-size:400%;
+  display: block;
+  text-decoration: none;
+  position: relative;
+  border: 1px solid white;
+  padding: 10px;
+  color: black; 
+  margin-right: 2%;
+}
+  .Collapsible__trigger:after {
+    font-family: 'FontAwesome';
+    content: '\f107';
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: block;
+    transition: transform 300ms; }
+  .Collapsible__trigger.is-open:after {
+    transform: rotateZ(180deg);}

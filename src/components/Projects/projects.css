@@ -41,18 +41,48 @@ background-size: cover;
             0 5px 15px 0 rgba(0,0,0,0.08);
 }
 .javaBox{
-  margin-left: 1.5%;
-  margin-right: 1.5%;
-  margin-bottom: 8%;
+  margin-bottom:2%;
 }
 .subLinks{
   font-size: 500%;
   font-weight: bold;
-  text-align: center;
-  margin-top: 3%;
-
 }
-.projectlinks:hover{
-    background: black;
-    color: white;
+
+
+.text1{
+  font-size: 130%;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 3%;
+  text-align: center;
+}
+
+.projectColumn{
+  float: left;
+  width: 33.33%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.projectgif{
+  border: solid black 1px;
+  border-radius: 5px;
+  height: auto;
+  width: auto;
+  max-width: 100%;
+}
+.anchor1{
+  color: black;
+  text-decoration: none;
+}
+.anchor1:hover{
+  text-decoration: none;
+  color: black;
+
 }

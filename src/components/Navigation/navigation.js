@@ -8,10 +8,10 @@ class Navigation extends React.Component {
 
     return (
       <div className="nav">
-        <NavLink  className="normal" to="/" >HOME</NavLink>
-        <NavLink className="normal" to="/about">ABOUT</NavLink>
-        <NavLink className="normal" to="/projects">PROJECTS</NavLink>
-        <NavLink className="normal"to= "/contact">CONTACT</NavLink>
+        <NavLink  className="normal" to="/" ><span className="linkspan">HOME</span></NavLink>
+        <NavLink className="normal" to="/about"><span className="linkspan">ABOUT</span></NavLink>
+        <NavLink className="normal" to="/projects"><span className="linkspan">PROJECTS</span></NavLink>
+        <NavLink className="normal"to= "/contact"><span className="linkspan">CONTACTS</span></NavLink>
       </div>
 
     );

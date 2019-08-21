@@ -11,7 +11,8 @@ import {VerticleButton  as ScrollUpButton} from "react-scroll-up-button";
 import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-
+import AnchorLink from 'react-anchor-link-smooth-scroll'
+import Particles from 'react-particles-js';
 class Home extends React.Component{
   constructor(props) {
   super(props)
@@ -57,9 +58,8 @@ slideWidth = () => {
 }
 
   render(){
-    //document.body.style.background = "url('https://images.unsplash.com/photo-1500993855538-c6a99f437aa7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center";;
-    //document.body.style.backgroundSize = "cover";
-    //document.body.style.backgroundAttachment = "fixed";
+    document.body.style.backgroundColor= "white";
+
 
     const settings = {
             dots: true,
@@ -71,26 +71,30 @@ slideWidth = () => {
 
         return (
           <div className="down">
+
           <ScrollUpButton />
+          <div>
+          
+          <h1 className="homeIntro">Hi! I am Calvin Yap. I like to create interactive websites.</h1>
           <Typing loop="true" className="Typer">
           <Typing.Speed ms={50} />
-          <span>Hi, I am Calvin Yap</span>
+          <span>I create react websites.</span>
           <Typing.Reset count={1} delay={2000} />
-          <span>I like to make stuff</span>
+          <span>I like to make stuff.</span>
           <Typing.Delay ms={1500} />
-          <Typing.Backspace count={10} />
-          <span>code projects</span>
+          <Typing.Backspace count={11} />
+          <span>code java projects.</span>
             <Typing.Delay ms={1500} />
-            <Typing.Backspace count={13} />
-            <span>create Java Apps</span>
+            <Typing.Backspace count={19} />
+            <span>compete in Hackathons.</span>
               <Typing.Delay ms={1500} />
-              <Typing.Backspace count={16} />
-            <span>cook food</span>
+              <Typing.Backspace count={22} />
+            <span>cook food.</span>
             <Typing.Delay ms={1500} />
-            <Typing.Backspace count={9}/>
-            <span>play sports</span>
+            <Typing.Backspace count={11}/>
+            <span>play sports.</span>
             <Typing.Delay ms={1500} />
-            <Typing.Backspace count={25} />
+            <Typing.Backspace count={26} />
             <Typing.Reset count={1} delay={500} />
             <span>Welcome to my page!</span>
           <Typing.Delay ms={5000} />
@@ -101,11 +105,15 @@ slideWidth = () => {
           <a className="links" href="linkedman"><FontAwesomeIcon className="fontawesome" icon={['fas', 'file']} size="2x" /></a>
           <a className="links" href="linkedman"><FontAwesomeIcon className="fontawesome"icon={['fas', 'envelope']} size="2x" /></a>
           </div>
+          <button className="button1"><AnchorLink className="anchor" offset="100"  href='#me'>Who Am I?</AnchorLink></button>
+          
+          </div>
      <div className="boxshadow">
 
      <div className="row">
        <div className="column">
          <div className="shifter">
+         <section id='me'/>
          <h1 className="montserrat">About Me. </h1>
          <hr className="hrstyle"/>
          <p className="paragraph">Hi, welcome to my page!</p>
@@ -173,19 +181,21 @@ slideWidth = () => {
      </div>
    </div>
        </div>
-    <h1 className="montserrat1"> Projects</h1>
+
+
+   {/* <h1 className="montserrat1"> Projects</h1>
       <div className="blackboard1">
         <p className="paragraph2"> Feel free to browse through my projects, I'm always working on something new 💡</p>
             <Container>
         <Row>
         <Col xs="6" sm="4">
         <Card className="white">
-          <CardImg top width="100%" src="https://i.imgur.com/6wFFao9.png" alt="Card image cap" />
+          <CardImg top width="100%" src="https://i.imgur.com/6wFFao9.png" alt="Java icon" />
           <CardBody>
             <CardTitle className="title">Java Projects ☕️</CardTitle>
             <hr/>
             <CardText className="center1">Programs made with Java and Eclipse</CardText>
-            <Button className="btn-custom"><NavLink className="aboutlink" to="/projects">Learn More</NavLink></Button>
+            
           </CardBody>
         </Card>
         </Col>
@@ -196,7 +206,6 @@ slideWidth = () => {
             <CardTitle className="title">Web Development 💻</CardTitle>
             <hr/>
             <CardText className="center1">Web / Mobile Development projects</CardText>
-            <Button className="btn-custom"><NavLink className="aboutlink" to="/projects">Learn More</NavLink></Button>
           </CardBody>
         </Card>
         </Col>
@@ -207,21 +216,24 @@ slideWidth = () => {
             <CardTitle className="title">Hackathons 🏅</CardTitle>
             <hr/>
             <CardText className="center1">Projects created during Hackathons</CardText>
-           <Button className="btn-custom"><NavLink className="aboutlink" to="/projects">Learn More</NavLink></Button>
           </CardBody>
         </Card>
         </Col>
         </Row>
         </Container>
+        <Button className="btn-custom"><NavLink className="aboutlink" to="/projects">Learn More</NavLink></Button>
 
-    </div>
+    </div>*/}
 
 
-    <h1 className="bigText"> My Life</h1>
+   {/* <h1 className="bigText"> My Life</h1>
     <div className="row">
     <div className="column1">
     <div className="blackboard">
-    <p className="paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <p className="paragraph">My life is interesting in weird and wacky ways.</p>
+    <p className="paragraph">Here I will post lastest photos of events happening to me and this will expand to blog posts in the future</p>
+    <p className="paragraph">Stay Posted....</p>
+
     </div>
     </div>
     <div className="column2">
@@ -241,8 +253,8 @@ slideWidth = () => {
     </div>
     </Slider>
      </div>
-    </div>
-    </div>
+            </div>
+    </div>*/}
 
 
 

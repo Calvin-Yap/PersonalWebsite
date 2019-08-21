@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router,Route, Switch } from "react-router-dom";
 
 import About from "./components/About/about";
 import Home from "./components/Home/home";
@@ -10,6 +10,7 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { faSmile } from '@fortawesome/free-regular-svg-icons';
 import { faFile, faEnvelope, faCode, faMedal, faDumbbell, faDog, faHeadphones} from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin,faGithub,faJava,faDev } from '@fortawesome/free-brands-svg-icons';
+import ScrollToTopRoute from "./scrolltotop";
 library.add(faFile,faEnvelope,faLinkedin,faGithub, faCode, faMedal, faDumbbell,faSmile,faDog,faHeadphones,faJava,faDev);
 class App extends Component {
 
@@ -31,17 +32,18 @@ class App extends Component {
 
   render() {
     return (
-      <BrowserRouter>
+      <Router>
+      
         <div>
         <Navigation />
-        <Switch>
-          <Route path="/" component={Home} exact />
-          <Route path="/about" component={About}/>
-          <Route path="/projects" component={Projects}/>
-          <Route path="/contact" component={Contact}/>
-        </Switch>
+       
+          <ScrollToTopRoute path="/" component={Home} exact />
+          <ScrollToTopRoute path="/about" component={About}/>
+          <ScrollToTopRoute path="/projects" component={Projects}/>
+          <ScrollToTopRoute path="/contact" component={Contact}/>
+  
         </div>
-      </BrowserRouter>
+      </Router>
     );
   }
 }
