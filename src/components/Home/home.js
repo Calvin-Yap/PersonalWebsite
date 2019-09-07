@@ -4,6 +4,7 @@ import Typing from 'react-typing-animation';
 import Slide from './Slide'
 import LeftArrow from './LeftArrow'
 import RightArrow from './RightArrow'
+import Particle from './particle'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Button, Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Container, Row, Col } from 'reactstrap';
 import { NavLink }  from "react-router-dom";
@@ -12,7 +13,7 @@ import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
-import Particles from 'react-particles-js';
+
 class Home extends React.Component{
   constructor(props) {
   super(props)
@@ -60,22 +61,13 @@ slideWidth = () => {
   render(){
     document.body.style.backgroundColor= "white";
 
-
-    const settings = {
-            dots: true,
-            infinite: true,
-            speed: 500,
-            slidesToShow: 1,
-            slidesToScroll: 1
-    };
-
         return (
           <div className="down">
-
+<Particle/>
           <ScrollUpButton />
           <div>
           
-          <h1 className="homeIntro">Hi! I am Calvin Yap. I like to create interactive websites.</h1>
+          <h1 className="homeIntro">Hi! I am Calvin Yap a Computer Science Student and tech enthusiast</h1>
           <Typing loop="true" className="Typer">
           <Typing.Speed ms={50} />
           <span>I create react websites.</span>

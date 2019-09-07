@@ -3,7 +3,7 @@ import './about.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import Collapsible from 'react-collapsible';
-
+import Particle from '../Home/particle'
 class About extends React.Component{
 
   render(){
@@ -15,12 +15,13 @@ class About extends React.Component{
       <div>
 
         <div className="boxabout">
+        <Particle/>
           <h1 className="titleabout"> About Me </h1>
           <h1 className="aboutlinks"><AnchorLink className="anchor1" offset="200"  href='#Education'>Education</AnchorLink></h1>
           <h1 className="aboutlinks"><AnchorLink  className="anchor1" offset="200"  href='#Experience'>Experience</AnchorLink></h1>
           <h1 className="aboutlinks"><AnchorLink  className="anchor1" offset="200"  href='#Interests'>Interests</AnchorLink></h1>
         </div>
-
+        
         <div className="javaBox">
           <h1 className="subLinks">A Little About Me</h1>
           <img className="aboutmephoto" src="https://i.imgur.com/sqfhCF3.jpg"/>

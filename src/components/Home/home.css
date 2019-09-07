@@ -8,45 +8,41 @@ html, body {
     min-width: 1500px;
 }
 
-.background{
-  background-image: url("https://images.unsplash.com/photo-1500993855538-c6a99f437aa7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+
 .homeIntro{
   margin-top: 10%;
-  margin-left: 5%;
+  margin-left: 20%;
+  margin-right: 20%;
   font-size: 400%;
-  margin-right: 45%;
-  text-align: left;
-  margin-bottom: 4%;
+  padding: 2%;
+  text-align: center;
+  margin-bottom: 2%;
   font-family:  'Roboto', sans-serif;
   font-weight: bold;
   color: white;
   background: #22252C;
-  padding: 10px;
   border-radius: 20px;
-
-
 }
 .Typer{
-    margin-left:10%;
+    margin-left:30%;
+    margin-right:30%;
     font-size: 300%;
     font-family: 'Roboto', sans-serif;
     margin-bottom: 3%;
     color: white;
     background: #22252C;
-    margin-right:45%;
-    padding: 10px;
+    padding: 1%;
     border-radius: 20px;
+    text-align: center;
   }
 
 .down{
-  margin-top: 7%;
 
+  margin-top: 7%;
 }
 
 div.links{
+  margin-left:38%;
   padding-left: 5%;
   margin-bottom: 2%;
 }
@@ -54,7 +50,7 @@ div.links{
 a.links{
   padding-right: 5%;
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .boxshadow{
@@ -186,7 +182,7 @@ a.links{
 }
 
 .fontawesome{
-color:#bfbfbf;
+color:#E14658;
 -o-transition:.7s;
 -ms-transition:.7s;
 -moz-transition:.7s;
@@ -196,7 +192,7 @@ transition: .7s;
 
 .fontawesome:hover{
   transform: scale(1.5);
-  color:white;
+  color:black;
 }
 .bottomlinks{
   margin-right: 1%;
@@ -381,47 +377,15 @@ color: #E14658;
 
 .button1{
   margin-bottom: 5%;
-  margin-left: 5%;
+  margin-left: 47%;
   background:#E14658;
   color:#fff;
   border:none;
-  position:relative;
-  height:60px;
-  font-size:1.6em;
-  padding:0 2em;
-  cursor:pointer;
-  transition:800ms ease all;
-  outline:none;
-  text-decoration: none;
+  padding: 1%;
+  font-size: 150%;
+  border-radius: 20px;
 }
-.button1:hover{
-  background:#fff;
-  color:black;
-  text-decoration: none;
-}
-.button1:before,button:after{
-  content:'';
-  position:absolute;
-  top:0;
-  right:0;
-  height:2px;
-  width:0;
-  background: black;
-  transition:400ms ease all;
-  text-decoration: none;
-}
-.button1:after{
-  right:inherit;
-  top:inherit;
-  left:0;
-  bottom:0;
-  text-decoration: none;
-}
-.button1:hover:before,button:hover:after{
-  width:100%;
-  transition:800ms ease all;
-  text-decoration: none;
-}
+
 
 .welcomeheader{
   position: absolute;
@@ -429,9 +393,10 @@ color: #E14658;
   left: 900px;
 }
 
-.anchor{
-  color: white;
+.anchor:link{
+
   text-decoration: none;
+  color: white;
 }
 .anchor:visited{
   text-decoration: none;
@@ -439,9 +404,10 @@ color: #E14658;
 
 }
 .anchor:hover{
-  text-decoration: none;
-  color: black;
+text-decoration: none;
+color: white;
 }
+
 .anchor:active{
   text-decoration: none;
   color: white;
