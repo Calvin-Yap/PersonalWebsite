@@ -8,11 +8,11 @@ html, body {
     min-width: 1500px;
 }
 
-
+.down{
+  margin-top: 5%;
+}
 .homeIntro{
-  margin-top: 10%;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-top: 17%;
   font-size: 400%;
   padding: 2%;
   text-align: center;
@@ -24,8 +24,8 @@ html, body {
   border-radius: 20px;
 }
 .Typer{
-    margin-left:30%;
-    margin-right:30%;
+    margin-left:20%;
+    margin-right:20%;
     font-size: 300%;
     font-family: 'Roboto', sans-serif;
     margin-bottom: 3%;
@@ -36,15 +36,14 @@ html, body {
     text-align: center;
   }
 
-.down{
-
-  margin-top: 7%;
+.aboutpad{
+  padding-left: 5%;
 }
 
 div.links{
   margin-left:38%;
   padding-left: 5%;
-  margin-bottom: 2%;
+  margin-bottom: 3%;
 }
 
 a.links{
@@ -59,12 +58,12 @@ a.links{
   box-shadow: 3px 0px 0px  black, 0 0 3px black;
 }
 .slider {
-  margin-left: 11%;
+  margin-left: 15%;
   border: 2px white solid;
-  margin-top: 7%;
+  margin-top: 10%;
   border-radius: 40px;
   position: relative;
-  max-width: 620px;
+  max-width: 700px;
   height: 500px;
   overflow: hidden;
   white-space: nowrap;
@@ -126,55 +125,13 @@ a.links{
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
 }
-.column {
-  float: left;
-  width: 50%;
-}
-.column6 {
-  float: left;
-  width: 50%;
-  padding-top: 2%;
-}
-.column1 {
-  float: left;
-  width: 60%;
-}
-.column2 {
-  float: left;
-  width: 40%;
-}
-.column3{
-  float: left;
-  width: 35%;
 
-}
-.column4{
-  float: left;
-  width: 65%;
-}
-.column5{
-  margin-top: 2%;
-  margin-left: 16.5%;
-
-  float: left;
-  width: 15%;
-}
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
 .icons{
-  margin-left: 5%;
-    margin-top: 8%;
-    font-weight: bold;
-    font-size: 120%;
+  display: inline;
+    font-size: 130%;
     color: white;
 }
-.shifter{
-  margin-left: 10%;
 
-}
 .montserrat{
   color: white;
   font-size: 800%;
@@ -199,11 +156,10 @@ transition: .7s;
   padding-left: 1%;
 }
 footer{
-  margin-top: 5%;
   padding-top: 2%;
   background: #000000;
   color: white;
-  padding-bottom: 4%;
+  padding-bottom: 2%;
   text-align: center;
 }
 .aboutlink{
@@ -356,9 +312,6 @@ fieldset[disabled] .btn-custom.active {
 }
 
 .nicole{
-  position: relative;
-  left:-36%;
-  top:37px;
   color: white;
   transition: .7s;
 }
@@ -368,7 +321,7 @@ color: #E14658;
 }
 
 .interests{
-  margin-bottom: -5%;
+
   margin-top: 5%;
   color: white;
   font-size: 200%;
@@ -376,7 +329,7 @@ color: #E14658;
 }
 
 .button1{
-  margin-bottom: 5%;
+  margin-bottom: 15%;
   margin-left: 47%;
   background:#E14658;
   color:#fff;
@@ -412,4 +365,7 @@ color: white;
   text-decoration: none;
   color: white;
 
+}
+.spacer{
+  margin: 4%
 }

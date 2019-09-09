@@ -15,20 +15,20 @@ class particle extends React.Component{
     params={{
       "particles": {
         "number": {
-          "value": 125,
+          "value": 80,
           "density": {
             "enable": true,
             "value_area": 800
           }
         },
         "color": {
-          "value": "#000000"
+          "value": ["#c8c8c8","#000000","#3c3e40","#E14658"]
         },
         "shape": {
           "type": "circle",
           "stroke": {
-            "width": 2,
-            "color": "#000000"
+            "width": 0,
+            "color": "#b6b2b2"
           },
           "polygon": {
             "nb_sides": 5
@@ -38,12 +38,22 @@ class particle extends React.Component{
           "value": 0.5,
           "random": false,
           "anim": {
-            "enable": false,
+            "enable": true,
             "speed": 1,
             "opacity_min": 0.1,
             "sync": false
           }
         
+        },
+        "size": {
+          "value": 8,
+          "random": true,
+          "anim": {
+            "enable": true,
+            "speed": 12,
+            "size_min": 0.1,
+            "sync": true
+          }
         },
         "line_linked": {
           "enable": true,
@@ -54,11 +64,11 @@ class particle extends React.Component{
         },
         "move": {
           "enable": true,
-          "speed": 6,
+          "speed": 4,
           "direction": "none",
           "random": true,
           "straight": false,
-          "out_mode": "out",
+          "out_mode": "bounce",
           "bounce": false,
           "attract": {
             "enable": false,
@@ -71,11 +81,11 @@ class particle extends React.Component{
         "detect_on": "canvas",
         "events": {
           "onhover": {
-            "enable": true,
+            "enable": false,
             "mode": "repulse"
           },
           "onclick": {
-            "enable": true,
+            "enable": false,
             "mode": "push"
           },
           "resize": true

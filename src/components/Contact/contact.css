@@ -1,12 +1,15 @@
 .parent {
   display: flex;
   height: 600px;
-  background-color: #222;
+  margin-bottom: 350px;
 }
 
 .child {
   background-color: red;
-  width: 100px;
-  height: 100px;
+  width: 50%;
+  height: 10px;
   margin: auto;
+}
+.test{
+  background-color: black;
 }
