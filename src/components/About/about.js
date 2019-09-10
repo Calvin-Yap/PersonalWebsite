@@ -13,7 +13,6 @@ class About extends React.Component{
     //document.body.style.backgroundAttachment = "fixed";
         return (
       <div>
-
         <div className="boxabout">
         <Particle/>
           <h1 className="titleabout"> About Me </h1>

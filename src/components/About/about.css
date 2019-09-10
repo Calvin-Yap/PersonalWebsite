@@ -3,20 +3,22 @@
 .titleabout{
   color: black;
   padding-left: 2%;
-  margin-left: 6%;
-  margin-right: 61%;
+  padding-right: 2%;
+  margin-left: 5%;
+  margin-right: 60%;
   font-size: 700%;
   background-color: white;
   font-weight: bold;
   padding-bottom: 10px;
   border: 2px rgb(19, 10, 10) solid;
-    text-align: left;
+    text-align: center;
 }
 .aboutlinks{
-  color: black;
+  color: #E14658;
   padding-left: 2%;
-  margin-left: 6%;
-  margin-right: 61%;
+  padding-right: 2%;
+  margin-left: 5%;
+  margin-right: 60%;
   background-color: white;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
@@ -24,16 +26,19 @@
   padding-bottom: 8px;
   border: 2px black solid;
   transition: 1s;
+  text-align: center;
 }
+
 .boxabout{
   position: relative;
-  margin: 1.5%;
+  margin-left: 1%;
+  margin-right: 1%;
 
-
+  padding-top: 18%;
+  padding-bottom: 10%;
   box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11),
             0 5px 15px 0 rgba(0,0,0,0.08);
 }
-
 
 .text{
     font-size: 130%;
@@ -51,7 +56,7 @@
 .aboutmephoto{
     border-radius: 10px;
     border: 1px black solid;
-    margin-left:32%; 
+    margin-left:2%; 
     width:35%;
     height: auto;
     margin-bottom: 2%;
@@ -65,18 +70,37 @@
   text-decoration: none;
   position: relative;
   border: 1px solid white;
-  padding: 10px;
-  color: black; 
-  margin-right: 2%;
+  padding-left:2%;
+  color: white; 
+  background: #22252C;
 }
   .Collapsible__trigger:after {
-    font-family: 'FontAwesome';
-    content: '\f107';
+    content: '+';
     position: absolute;
-    right: 10px;
-    top: 10px;
+    right: 20px;
+    top: 5px;
     display: block;
     transition: transform 300ms; }
   .Collapsible__trigger.is-open:after {
-    transform: rotateZ(180deg);}
+    transform: rotateZ(180deg);
+  }
 
+    .anchor1:link{
+      text-decoration: none;
+      color: #E14658;
+    }
+    .anchor1:visited{
+      text-decoration: none;
+      color: #E14658;
+    
+    }
+    .anchor1:hover{
+    text-decoration: none;
+    color: #E14658;
+    }
+    
+    .anchor1:active{
+      text-decoration: none;
+      color: #E14658;
+    
+    }
