@@ -3,34 +3,44 @@ import './about.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import Collapsible from 'react-collapsible';
-import Particle from '../Home/particle'
+import { Container, Row, Col } from 'reactstrap';
+
 class About extends React.Component{
 
   render(){
     document.body.style.backgroundColor= "white";
-    document.body.style.backgroundColor = "white";
     //document.body.style.backgroundSize = "cover";
     //document.body.style.backgroundAttachment = "fixed";
         return (
       <div>
+   
         <div className="boxabout">
-        <Particle/>
-          <h1 className="titleabout"> About Me </h1>
-          <h1 className="aboutlinks"><AnchorLink className="anchor1" offset="200"  href='#Education'>Education</AnchorLink></h1>
-          <h1 className="aboutlinks"><AnchorLink  className="anchor1" offset="200"  href='#Experience'>Experience</AnchorLink></h1>
-          <h1 className="aboutlinks"><AnchorLink  className="anchor1" offset="200"  href='#Interests'>Interests</AnchorLink></h1>
+        <h1 className="subLinks">About Me</h1>
+        <hr className="hrstyleblack"/>
+        <p >
+              I am a third year Computer Science student studying at Ryerson University. I am an active individual who enjoys walks with my dog, practicing martial arts, playing Frisbee, and weightlifting. In terms of my studies am currently interested in the fields of artificial intelligence and data sciences. In addition, Computer Graphics is another field that I am intrigued by as I love playing indie games so it would be a dream for me to create or help the development of one. I am always eager and excited to learn new things and create new projects that both further my learning and to help others. </p>
+        <Container fluid>
+          <Row>
+            <Col md="4">
+              <h1 className="aboutlinks">
+              <AnchorLink className="anchor1" offset="200"  href='#Education'>Education</AnchorLink>
+              </h1>
+            </Col>
+            <Col md="4">
+            <h1 className="aboutlinks"><AnchorLink  className="anchor1" offset="200"  href='#Experience'>Experience</AnchorLink>
+            </h1>
+            </Col>
+            <Col md="4">
+            <h1 className="aboutlinks">
+              <AnchorLink  className="anchor1" offset="200"  href='#Interests'>Interests</AnchorLink>
+            </h1>
+            </Col>
+          </Row>
+        </Container>
+
         </div>
         
-        <div className="javaBox">
-          <h1 className="subLinks">A Little About Me</h1>
-          <img className="aboutmephoto" src="https://i.imgur.com/sqfhCF3.jpg"/>
-          <div className="links">
-          <a className="links" href="https://github.com/Calvin-Yap" target="_blank"><FontAwesomeIcon className="fontawesome" icon={['fab', 'github']} size="2x"/></a>
-          <a className="links" href="linkedman"><FontAwesomeIcon className="fontawesome" icon={['fab', 'linkedin']} size="2x" /></a>
-          <a className="links" href="linkedman"><FontAwesomeIcon className="fontawesome" icon={['fas', 'file']} size="2x" /></a>
-          <a className="links" href="linkedman"><FontAwesomeIcon className="fontawesome"icon={['fas', 'envelope']} size="2x" /></a>
-          </div>
-        </div>
+       
         <div className="javaBox">
 
           <Collapsible trigger="Education">

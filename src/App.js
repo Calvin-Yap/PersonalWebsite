@@ -43,7 +43,7 @@ class App extends Component {
           <ScrollToTopRoute path="/contact" component={Contact}/>
   
         </div>
-      </Router>
+     </Router>
     );
   }
 }

@@ -94,7 +94,7 @@ slideWidth = () => {
         </Typing>
           <div className="links">
           <a className="links" href="https://github.com/Calvin-Yap" target="_blank"><FontAwesomeIcon className="fontawesome" icon={['fab', 'github']} size="2x"/></a>
-          <a className="links" href="linkedman"><FontAwesomeIcon className="fontawesome" icon={['fab', 'linkedin']} size="2x" /></a>
+          <a className="links" href="https://www.linkedin.com/in/calvin-yap-b83275193/" target="_blank"><FontAwesomeIcon className="fontawesome" icon={['fab', 'linkedin']} size="2x" /></a>
           <a className="links" href="linkedman"><FontAwesomeIcon className="fontawesome" icon={['fas', 'file']} size="2x" /></a>
           <a className="links" href="linkedman"><FontAwesomeIcon className="fontawesome"icon={['fas', 'envelope']} size="2x" /></a>
           <br/>
@@ -120,7 +120,7 @@ slideWidth = () => {
               <hr className="hrstyle"/>
               <p className="paragraph">Hi, welcome to my page!</p>
               <p className="paragraph">
-              I am a third year Computer Science student studying at Ryerson University. I am an active individual who enjoys walks with my dog, practicing martial arts, playing Frisbee, and weightlifting. In terms of my studies am currently interested in the fields of artificial intelligence and data sciences. In addition, Computer Graphics is another field that I am intrigued by as I love playing indie games so it would be a dream for me to create or help the development of one. I am always eager and excited to learn new things and create new projects that both further my learning and to help others. </p>
+              I am a Computer Science Student at Ryerson University. I enjoy writing programs to solve problems in Java and Python. Also, I enjoy creating progressive web applications in my spare time to broaden my skills not only as a progammer but also a web developer. Currently, I am looking for a cooperative education or internship program for Winter 2020 to further improve my skills as a programmer. </p>
               <p className="interests"> Interests </p>
               <div className="spacer"/>
                 <Container fluid>
@@ -139,7 +139,7 @@ slideWidth = () => {
                     </Col>
                     <Col md="3">
                     <FontAwesomeIcon className="nicole" icon={['fab', 'java']} size="2x"/>
-                    <p className="icons"> &emsp;Programming</p>
+                    <p className="icons"> &emsp;Java</p>
                     </Col>
                   </Row>
                   <div className="spacer"/>
@@ -164,7 +164,9 @@ slideWidth = () => {
                 </Container>
                 <div className="spacer"/>
               <Button className="btn-custom"  size="lg"><NavLink className="aboutlink" to="/about">Learn More</NavLink></Button>
+
               </div>
+              <a className="paragraph">No time to browse the rest of my page. Heres my resume.</a>
              </Col>
              <Col md="6">
              <div className="slider">
