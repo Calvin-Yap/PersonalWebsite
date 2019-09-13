@@ -9,8 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Button, Container, Row, Col } from 'reactstrap';
 import { NavLink }  from "react-router-dom";
 import {VerticleButton  as ScrollUpButton} from "react-scroll-up-button";
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 class Home extends React.Component{

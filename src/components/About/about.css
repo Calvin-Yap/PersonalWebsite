@@ -16,8 +16,8 @@
 }
 .boxabout{
   position: relative;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 14%;
+  margin-right: 14%;
 
   padding-top: 5%;
   padding-bottom: 10%;
@@ -70,6 +70,7 @@
     transform: rotateZ(180deg);
   }
 
+
     .anchor1:link{
       text-decoration: none;
       color: #E14658;
@@ -88,4 +89,66 @@
       text-decoration: none;
       color: #E14658;
     
+    }
+
+    .iconsF{
+      color: #22252C;
+      transition: .7s;
+    }
+    .iconsT{
+
+      display: inline;
+        font-size: 130%;
+        color: #22252C;
+    }
+    .centeralign{
+      margin-left: 10%;
+
+    }
+
+    .spacer1{
+      padding-bottom: 5%;
+    }
+    .btn-custom1 {
+      margin-left:10%;
+      background-color: #E14658;
+      border-color: #E14658;
+      color: white;
+    }
+    .btn-custom1:hover,
+    .btn-custom1:focus,
+    .btn-custom1:active,
+    .btn-custom1.active {
+      background-color: #dd3044;
+      border-color: #d22236;
+      color: white;
+    }
+    .btn-custom1.disabled:hover,
+    .btn-custom1.disabled:focus,
+    .btn-custom1.disabled:active,
+    .btn-custom1.disabled.active,
+    .btn-custom1[disabled]:hover,
+    .btn-custom1[disabled]:focus,
+    .btn-custom1[disabled]:active,
+    .btn-custom1[disabled].active,
+    fieldset[disabled] .btn-custom1:hover,
+    fieldset[disabled] .btn-custom1:focus,
+    fieldset[disabled] .btn-custom1:active,
+    fieldset[disabled] .btn-custom1.active {
+      background-color: #E14658;
+      border-color: #E14658;
+      color:white;
+    }
+
+    .learnmore{
+      margin-left: -40%;
+      text-align: block;
+    }
+    .aboutme{
+      font-size: 150%;
+      color: black;
+      margin-left: 4%;
+      margin-right: 4%;
+      margin-top: 2%;
+      margin-bottom: 4%;
     }
