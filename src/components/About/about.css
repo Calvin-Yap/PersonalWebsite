@@ -102,15 +102,15 @@
         color: #22252C;
     }
     .centeralign{
-      margin-left: 10%;
-
+text-align: center;
+margin-left:2%;
     }
 
     .spacer1{
-      padding-bottom: 5%;
+      padding-bottom: .5%;
     }
+
     .btn-custom1 {
-      margin-left:10%;
       background-color: #E14658;
       border-color: #E14658;
       color: white;
@@ -140,10 +140,7 @@
       color:white;
     }
 
-    .learnmore{
-      margin-left: -40%;
-      text-align: block;
-    }
+
     .aboutme{
       font-size: 150%;
       color: black;

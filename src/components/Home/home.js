@@ -92,8 +92,8 @@ slideWidth = () => {
 
         </Typing>
           <div className="links">
-          <a className="links" href="https://github.com/Calvin-Yap" target="_blank"><FontAwesomeIcon className="fontawesome" icon={['fab', 'github']} size="2x"/></a>
-          <a className="links" href="https://www.linkedin.com/in/calvin-yap-b83275193/" target="_blank"><FontAwesomeIcon className="fontawesome" icon={['fab', 'linkedin']} size="2x" /></a>
+          <a className="links" href="https://github.com/Calvin-Yap" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="fontawesome" icon={['fab', 'github']} size="2x"/></a>
+          <a className="links" href="https://www.linkedin.com/in/calvin-yap-b83275193/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="fontawesome" icon={['fab', 'linkedin']} size="2x" /></a>
           <a className="links" href="linkedman"><FontAwesomeIcon className="fontawesome" icon={['fas', 'file']} size="2x" /></a>
           <a className="links" href="linkedman"><FontAwesomeIcon className="fontawesome"icon={['fas', 'envelope']} size="2x" /></a>
           <br/>
@@ -138,7 +138,7 @@ slideWidth = () => {
                     </Col>
                     <Col md="3">
                     <FontAwesomeIcon className="nicole" icon={['fab', 'java']} size="2x"/>
-                    <p className="icons"> &emsp;Java</p>
+                    <p className="icons"> &emsp;Coding</p>
                     </Col>
                   </Row>
                   <div className="spacer"/>

@@ -40,19 +40,38 @@ class About extends React.Component{
                     <FontAwesomeIcon className="iconsF" icon={['fab', 'dev']} size="2x"/>
                     <p className="iconsT"> &emsp;Web Dev</p>
                     <br/>
-                    <Button className="btn-custom1" id="webdev" style={{ marginBottom: '1rem' }}>
-                      More
-                    </Button>
-                    <UncontrolledCollapse className="learnmore" toggler="#webdev">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-                    </p>
-                    </UncontrolledCollapse>
+                    <p>On my spare time I like to create webpages.</p>
                     </Col>
                     <Col md="3">
                     <FontAwesomeIcon className="iconsF" icon={['fas', 'medal']} size="2x"/>
                     <p className="iconsT"> &emsp;Sports</p>
                     <br/>
+                    <p>I play many sports such as karate, frisbee, basketball, and volleyball.</p>                    
+                    </Col>
+                    <Col md="3">
+                    <FontAwesomeIcon className="iconsF"icon={['fas', 'dumbbell']} size="2x"/>
+                    <p className="iconsT"> &emsp;Fitness</p>
+                    <br/>                
+                    <p>Growing up as a very skinny kid, I try to change that with weightlifting.</p>
+                    </Col>
+                    <Col md="3">
+                    <FontAwesomeIcon className="iconsF" icon={['fab', 'java']} size="2x"/>
+                    <p className="iconsT"> &emsp;Coding</p>
+                    <br/>
+                   <p>Fluent in many coding languages such as Java, C, Bash, etc.</p>
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col md="3">
+                    <Button className="btn-custom1" id="webdev" style={{ marginBottom: '1rem' }}>
+                      More
+                    </Button>
+                    <UncontrolledCollapse  toggler="#webdev">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>   
+                    </UncontrolledCollapse>
+                    </Col>
+                    <Col md="3">
                     <Button className="btn-custom1" id="sports" style={{ marginBottom: '1rem' }}>
                       more
                     </Button>
@@ -61,9 +80,6 @@ class About extends React.Component{
                     </UncontrolledCollapse>
                     </Col>
                     <Col md="3">
-                    <FontAwesomeIcon className="iconsF"icon={['fas', 'dumbbell']} size="2x"/>
-                    <p className="iconsT"> &emsp;Fitness</p>
-                    <br/>
                     <Button className="btn-custom1" id="fitness" style={{ marginBottom: '1rem' }}>
                       more
                     </Button>
@@ -72,9 +88,6 @@ class About extends React.Component{
                     </UncontrolledCollapse>
                     </Col>
                     <Col md="3">
-                    <FontAwesomeIcon className="iconsF" icon={['fab', 'java']} size="2x"/>
-                    <p className="iconsT"> &emsp;Java</p>
-                    <br/>
                     <Button className="btn-custom1" id="java" style={{ marginBottom: '1rem' }}>
                       more
                     </Button>
@@ -88,6 +101,26 @@ class About extends React.Component{
                     <FontAwesomeIcon className="iconsF" icon={['fas', 'dog']} size="2x"/>
                     <p className="iconsT">&emsp; Pets</p>
                     <br/>
+                    </Col>
+                    <Col md="3">
+                    <FontAwesomeIcon className="iconsF"icon={['fas', 'headphones']} size="2x" />
+                    <p className="iconsT">&emsp; Music</p>
+                    <br/>     
+                    </Col>
+                    <Col md="3">
+                    <FontAwesomeIcon className="iconsF"icon={['fas', 'gamepad']} size="2x" />
+                    <p className="iconsT">&emsp; Gaming</p>
+                    <br/>                  
+                    </Col>
+                    <Col md="3">
+                    <FontAwesomeIcon className="iconsF"icon={['fas', 'plane']} size="2x" />
+                    <p className="iconsT"> &emsp;Travel</p>
+                    <br/>
+                   
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col md="3">
                     <Button className="btn-custom1" id="pets" style={{ marginBottom: '1rem' }}>
                       more
                     </Button>
@@ -96,9 +129,6 @@ class About extends React.Component{
                     </UncontrolledCollapse>
                     </Col>
                     <Col md="3">
-                    <FontAwesomeIcon className="iconsF"icon={['fas', 'headphones']} size="2x" />
-                    <p className="iconsT">&emsp; Music</p>
-                    <br/>
                     <Button className="btn-custom1" id="music" style={{ marginBottom: '1rem' }}>
                       more
                     </Button>
@@ -107,9 +137,6 @@ class About extends React.Component{
                     </UncontrolledCollapse>
                     </Col>
                     <Col md="3">
-                    <FontAwesomeIcon className="iconsF"icon={['fas', 'gamepad']} size="2x" />
-                    <p className="iconsT">&emsp; Gaming</p>
-                    <br/>
                     <Button className="btn-custom1" id="gaming" style={{ marginBottom: '1rem' }}>
                       more
                     </Button>
@@ -118,9 +145,6 @@ class About extends React.Component{
                     </UncontrolledCollapse>
                     </Col>
                     <Col md="3">
-                    <FontAwesomeIcon className="iconsF"icon={['fas', 'plane']} size="2x" />
-                    <p className="iconsT"> &emsp;Travel</p>
-                    <br/>
                     <Button className="btn-custom1" id="travel" style={{ marginBottom: '1rem' }}>
                       more
                     </Button>
@@ -132,26 +156,24 @@ class About extends React.Component{
                 </Container>
                 </div>
        
-
         </div>
         
         <div className="javaBox">
           <Collapsible trigger="Education">
           <section id='Education'/>
           <img className="ryersonlogo" src="https://i.imgur.com/6dXhSzX.png"/>
-          <p className="text">I am currently a second year student studying Computer Science at Ryerson University. Here I gain the proper experience for coding langauges while learning about data structures, algorithms, networks, and operating systems. I have intrests towards the fields of software design or computer vision, and artifical intelligence.</p>
+          <p className="text">I am currently a second year student studying Computer Science at Ryerson University. Here I gain the proper experience for coding languages while learning about core concepts such as data structures, algorithms, networks, and operating systems. My interests lie towards the fields of software design, computer vision, and artifical intelligence.</p>
           </Collapsible>
         </div>
         <div className="javaBox">
         <Collapsible trigger="Experience">
           <section id='Experience'/>
-          <p className="text">Currently I am a freelance web desginer. Creating websites for fun and to help out friends and families trying to get a website template started.
-          I am planning to find an iternship position to further learn and expand my horizons in the web development field.
+          <p className="text">Currently, I am a freelance web desginer creating websites for fun and to assist friends and families trying to get a website template started.
+          I am currently searching for an internship to further enhance my skills and expand my horizons in the web development field.
           </p>
           </Collapsible>
         </div>
        
-
         <footer>
         <a className="bottomlinks" href="https://github.com/Calvin-Yap"><FontAwesomeIcon className="fontawesome" icon={['fab', 'github']} size="lg" /></a>
         <a className="bottomlinks" href="linkedman"><FontAwesomeIcon className="fontawesome" icon={['fab', 'linkedin']} size="lg" /></a>
