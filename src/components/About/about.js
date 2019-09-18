@@ -18,12 +18,24 @@ class About extends React.Component{
         <hr className="hrstyleblack"/>
         <Container fluid>
           <Row>
-            <Col md="6">
+            <Col md="2">
               <h1 className="aboutlinks">
               <AnchorLink className="anchor1" offset="200"  href='#Education'>Education</AnchorLink>
               </h1>
             </Col>
-            <Col md="6">
+            <Col md="2">
+            <h1 className="aboutlinks"><AnchorLink  className="anchor1" offset="200"  href='#Experience'>Experience</AnchorLink>
+            </h1>
+            </Col> 
+            <Col md="2">
+            <h1 className="aboutlinks"><AnchorLink  className="anchor1" offset="200"  href='#Experience'>Experience</AnchorLink>
+            </h1>
+            </Col> 
+            <Col md="2">
+            <h1 className="aboutlinks"><AnchorLink  className="anchor1" offset="200"  href='#Experience'>Experience</AnchorLink>
+            </h1>
+            </Col> 
+            <Col md="2">
             <h1 className="aboutlinks"><AnchorLink  className="anchor1" offset="200"  href='#Experience'>Experience</AnchorLink>
             </h1>
             </Col> 
@@ -31,6 +43,9 @@ class About extends React.Component{
         </Container>
         <p className="aboutme">
         I am a third year Computer Science student studying at Ryerson University. In terms of my studies am currently interested in the fields of artificial intelligence and data sciences. In addition, Computer Graphics is another field that I am intrigued by as I love playing indie games so it would be a dream for me to create or help the development of one. I am always eager and excited to learn new things and create new projects that both further my learning and help others. In my spare time you can find me enjoying walks with my dog, practicing martial arts, playing Frisbee, and weightlifting. </p>        
+
+          <h1>Goals</h1>
+          <h1>My Toolbox</h1>
           <h1>Interests</h1>
           <div className="centeralign">
 
@@ -155,7 +170,7 @@ class About extends React.Component{
                   </Row>
                 </Container>
                 </div>
-       
+
         </div>
         
         <div className="javaBox">
