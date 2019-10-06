@@ -11,7 +11,7 @@ class Navigation extends React.Component {
         <NavLink  className="normal" to="/" ><span className="linkspan">HOME</span></NavLink>
         <NavLink className="normal" to="/about"><span className="linkspan">ABOUT</span></NavLink>
         <NavLink className="normal" to="/projects"><span className="linkspan">PROJECTS</span></NavLink>
-        <NavLink className="normal"to= "/contact"><span className="linkspan">CONTACTS</span></NavLink>
+        <NavLink className="normal"to= "/contact"><span className="linkspan">CONTACT</span></NavLink>
       </div>
 
     );

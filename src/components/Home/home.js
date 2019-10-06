@@ -119,7 +119,8 @@ slideWidth = () => {
               <hr className="hrstyle"/>
               <p className="paragraph">Hi, welcome to my page!</p>
               <p className="paragraph">
-              I am a Computer Science Student at Ryerson University. I enjoy writing programs to solve problems in Java and Python. Also, I enjoy creating progressive web applications in my spare time to broaden my skills not only as a progammer but also a web developer. Currently, I am looking for a cooperative education or internship program for Winter 2020 to further improve my skills as a programmer. </p>
+              I am a Computer Science Student at Ryerson University. I enjoy writing programs to solve problems in Java and Python. Also, I enjoy creating progressive web applications in my spare time to sharpen my skills not only as a programmer but also a web developer. Currently, I am looking for a cooperative education or internship program for Winter 2020 to further improve my skills as a programmer.               
+               </p>
               <p className="interests"> Interests </p>
               <div className="spacer"/>
                 <Container fluid>
@@ -148,8 +149,8 @@ slideWidth = () => {
                     <p className="icons">&emsp; Pets</p>
                     </Col>
                     <Col md="3">
-                    <FontAwesomeIcon className="nicole"icon={['fas', 'headphones']} size="2x" />
-                    <p className="icons">&emsp; Music</p>
+                    <FontAwesomeIcon className="nicole"icon={['fas', 'car']} size="2x" />
+                    <p className="icons">&emsp; Cars</p>
                     </Col>
                     <Col md="3">
                     <FontAwesomeIcon className="nicole"icon={['fas', 'gamepad']} size="2x" />

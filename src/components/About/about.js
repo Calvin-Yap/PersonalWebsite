@@ -3,7 +3,7 @@ import './about.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import Collapsible from 'react-collapsible';
-import { Container, Row, Col, UncontrolledCollapse, Button } from 'reactstrap';
+import { Container, Row, Col, UncontrolledCollapse, Button, Table  } from 'reactstrap';
 
 class About extends React.Component{
   render(){
@@ -16,7 +16,8 @@ class About extends React.Component{
         <div className="boxabout">
         <h1 className="subLinks">About Me</h1>
         <hr className="hrstyleblack"/>
-        <Container fluid>
+      
+       {/* <Container fluid>
           <Row>
             <Col md="2">
               <h1 className="aboutlinks">
@@ -41,12 +42,116 @@ class About extends React.Component{
             </Col> 
           </Row>
         </Container>
-        <p className="aboutme">
-        I am a third year Computer Science student studying at Ryerson University. In terms of my studies am currently interested in the fields of artificial intelligence and data sciences. In addition, Computer Graphics is another field that I am intrigued by as I love playing indie games so it would be a dream for me to create or help the development of one. I am always eager and excited to learn new things and create new projects that both further my learning and help others. In my spare time you can find me enjoying walks with my dog, practicing martial arts, playing Frisbee, and weightlifting. </p>        
+       */}
 
-          <h1>Goals</h1>
-          <h1>My Toolbox</h1>
-          <h1>Interests</h1>
+          <p className="aboutme">
+        I am a third year Computer Science student studying at Ryerson University. In terms of my studies am currently interested in the fields of artificial intelligence and data sciences. In addition, Computer Graphics is another field that I am intrigued by as I love playing indie games so it would be a dream for me to create or help the development of one. I am always eager and excited to learn new things and create new projects that both further my learning and help others. In my spare time you can find me enjoying walks with my dog, practicing martial arts, playing Frisbee, and weightlifting. 
+        </p>   
+
+             
+
+          <div>
+            <h1 className="subabouthead">Goals</h1>
+          </div>
+          <h1 className="subabouthead">Langauges</h1>
+          <p>As a Computer Science student I like to be versitile, being fluent in different programming languages.</p> 
+          <div className="tabletools">          
+            <Container fluid>
+              <Row>
+              <Col md="3">
+                Most Familiar
+                </Col>
+                <Col md="9">
+                  Projects or Experience using the language
+                </Col>
+
+              </Row>
+              <Row>
+              <Col md="3">
+                Java
+                </Col>
+              <Col md="9">
+              I have completed multiple courses in which we sol
+              </Col>
+              </Row>
+              <Row>
+              <Col md="3">
+              C  
+              </Col>
+              </Row>
+              <Row><Col md="3">
+                Bash
+                </Col>
+                </Row>
+                <Row>
+                <Col md="3">
+                React.js  
+                </Col>
+                </Row>
+                <Row>
+                <Col md="3">
+                HTML/CSS  
+                </Col>
+                </Row>
+                
+            </Container>
+            <br/>
+            <Container fluid>
+            <Row>
+              <Col md="3">
+              Some Experience
+                </Col>
+                <Col md="9">
+                Projects or Experience using the language
+                </Col>
+              </Row>
+              <Row>
+              <Col md="3">
+                C++
+                </Col>
+              </Row>
+              <Row>
+              <Col md="3">
+              Smalltalk
+              </Col>
+              </Row>
+              <Row><Col md="3">
+                Rust
+                </Col>
+                </Row>
+                
+            </Container>
+            <br/>
+            <Container fluid>
+            <Row>
+              <Col md="3">
+                Currently Learning
+                </Col>
+                <Col md="9">
+                Projects or Experience using the language
+                </Col>
+              </Row>
+              <Row>
+              <Col md="3">
+                Python
+                </Col>
+              </Row>
+              <Row>
+              <Col md="3">
+              OpenGL 
+              </Col>
+              </Row>
+              <Row><Col md="3">
+                OracleDB/SQL
+                </Col>
+                </Row>
+            </Container>
+
+            
+          </div>
+          <div>
+          <h1 className="subabouthead">Interests</h1>
+          </div>
           <div className="centeralign">
 
         <Container fluid>
@@ -116,22 +221,25 @@ class About extends React.Component{
                     <FontAwesomeIcon className="iconsF" icon={['fas', 'dog']} size="2x"/>
                     <p className="iconsT">&emsp; Pets</p>
                     <br/>
+                    <p>I love animals, and I am a Chow Chow owner.</p>
                     </Col>
                     <Col md="3">
-                    <FontAwesomeIcon className="iconsF"icon={['fas', 'headphones']} size="2x" />
-                    <p className="iconsT">&emsp; Music</p>
+                    <FontAwesomeIcon className="iconsF"icon={['fas', 'car']} size="2x" />
+                    <p className="iconsT">&emsp; Cars</p>
                     <br/>     
+                    <p>Car enthusiast and excited to work on my own car.</p>
                     </Col>
                     <Col md="3">
                     <FontAwesomeIcon className="iconsF"icon={['fas', 'gamepad']} size="2x" />
                     <p className="iconsT">&emsp; Gaming</p>
-                    <br/>                  
+                    <br/>
+                    <p>Very big fan of indie games and love to explore more niche games.</p>                  
                     </Col>
                     <Col md="3">
                     <FontAwesomeIcon className="iconsF"icon={['fas', 'plane']} size="2x" />
                     <p className="iconsT"> &emsp;Travel</p>
                     <br/>
-                   
+                    <p>My dream is to travel the world and explore new things and cultures.</p>
                     </Col>
                   </Row>
                   <Row>

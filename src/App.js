@@ -8,10 +8,10 @@ import Navigation from "./components/Navigation/navigation";
 import Contact from "./components/Contact/contact"
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faSmile } from '@fortawesome/free-regular-svg-icons';
-import { faFile, faEnvelope, faCode, faMedal, faDumbbell, faDog, faHeadphones, faGamepad, faPlane} from '@fortawesome/free-solid-svg-icons'
+import { faFile, faEnvelope, faCode, faMedal, faDumbbell, faDog, faCar, faGamepad, faPlane} from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin,faGithub,faJava,faDev } from '@fortawesome/free-brands-svg-icons';
 import ScrollToTopRoute from "./scrolltotop";
-library.add(faFile,faEnvelope,faLinkedin,faGithub, faCode, faMedal, faDumbbell,faSmile,faDog,faHeadphones,faJava,faDev,faGamepad,faPlane);
+library.add(faFile,faEnvelope,faLinkedin,faGithub, faCode, faMedal, faDumbbell,faSmile,faDog,faCar,faJava,faDev,faGamepad,faPlane);
 class App extends Component {
 
 /*  authenticate(){
