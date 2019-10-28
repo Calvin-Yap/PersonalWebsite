@@ -1,9 +1,8 @@
 import React from 'react';
 import './about.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import AnchorLink from 'react-anchor-link-smooth-scroll'
 import Collapsible from 'react-collapsible';
-import { Container, Row, Col, UncontrolledCollapse, Button, Table  } from 'reactstrap';
+import { Container, Row, Col, UncontrolledCollapse, Button  } from 'reactstrap';
 
 class About extends React.Component{
   render(){

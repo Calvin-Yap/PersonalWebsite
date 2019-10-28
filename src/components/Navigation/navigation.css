@@ -16,7 +16,22 @@ div.nav{
     min-width: 1500px; 
 
 }
+button.link { background:none;border:none; 
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 200%;
+  position: relative;
+  top:-6px;
+  right:5px;
+  -o-transition:.7s;
+  -ms-transition:.7s;
+  -moz-transition:.7s;
+  -webkit-transition:.7s;
+  transition: .7s;
+
+  }
 a.normal{
+  background:none;border:none; 
     text-decoration: none;
     float: none;
     font-family: 'Roboto', sans-serif;
@@ -33,6 +48,10 @@ a.normal{
     transition: .7s;
     padding-right: 6%;
 
+}
+button.link:hover{
+  text-decoration: none;
+  color: #E14658;
 }
 a.normal:hover{
   text-decoration: none;
