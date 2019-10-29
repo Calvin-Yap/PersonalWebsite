@@ -36,7 +36,7 @@ toggle() {
            <ModalBody>
             <p className="modalbody">Phone: (647)-990-3688</p>
             <p className="modalbody">Email: calvin.yap@ryerson.ca</p>
-            <p className="modalbody">Feel free leave me an email about anything!</p>
+            <p className="modalbody">Feel free to leave me an email about anything!</p>
 
            </ModalBody>
            <ModalFooter>

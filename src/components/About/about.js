@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Collapsible from 'react-collapsible';
 import { Container, Row, Col, UncontrolledCollapse, Button  } from 'reactstrap';
 import Footer from '../Footer/footer'
+
 class About extends React.Component{
   render(){
     document.body.style.backgroundColor= "white";
@@ -44,11 +45,11 @@ class About extends React.Component{
        */}
 
           <p className="aboutme">
-        I am a third year Computer Science student studying at Ryerson University. In terms of my studies am currently interested in the fields of artificial intelligence and data sciences. In addition, Computer Graphics is another field that I am intrigued by as I love playing indie games so it would be a dream for me to create or help the development of one. I am always eager and excited to learn new things and create new projects that both further my learning and help others. In my spare time you can find me enjoying walks with my dog, practicing martial arts, playing Frisbee, and weightlifting. 
+        I am a third year Computer Science student studying at Ryerson University. In terms of my studies I am currently interested in the fields of artificial intelligence, data sciences, software development, and computer graphics. My dream job in computer science would be to create or help the development of an indie game, as I love the fresh and unique aspects that are just missing in many mainstream games today. As for myself, I am always eager and excited to learn new things and create new projects that both further my learning and help others. In my spare time you can find me enjoying walks with my dog, practicing martial arts, playing Frisbee, and weightlifting. 
         </p>   
           <div>
             <h1 className="subabouthead">Goals</h1>
-           <p className="aboutme"> I always like to set goals for myself to track personal progress and try to achieve bigger feats! For this term I had several academic goals as well as personal goals.</p>
+           <p className="aboutme"> I always like to set goals for myself to track personal progress and try to achieve bigger feats! For this term I had several academic and personal goals.</p>
          
            <Container fluid>
            <Row>
@@ -202,10 +203,9 @@ class About extends React.Component{
                 </div>
 
         </div>
-        
+
         <div className="javaBox">
-          <Collapsible trigger="Education">
-          <section id='Education'/>
+          <Collapsible open="true" trigger="Education">
           <Container className="RU" fluid>
             <Row>
                <Col md="4"/> 
@@ -213,19 +213,18 @@ class About extends React.Component{
                <Col md="4"/> 
             </Row>
           </Container>
-          <p className="text">I am currently a third year student studying Computer Science at Ryerson University. Here I gain the proper experience for coding languages while learning about core concepts such as data structures, algorithms, networks, and operating systems. My interests lie towards the fields of software design, computer vision, and artifical intelligence.</p>
+          <p className="text">I am currently a third year student studying Computer Science at Ryerson University. Here I gain the proper experience for coding languages while learning about core concepts such as data structures, algorithms, networks, and operating systems. This semester I am currently enrolled in Computer Security, Database Systems, Artificial Intelligence, and Computer Graphics. Some projects that I will be working on are: A clothing store database system with SQL and Java, a submarine battle simulator with GLU and C++, the further development of this webpage, and a weather app with Angular.</p>
           </Collapsible>
         </div>
         <div className="javaBox">
-        <Collapsible trigger="Experience">
-          <section id='Experience'/>
+        <Collapsible open="true" trigger="Experience">
           <p className="text">Currently I am working part-time for Northern Karate where I: </p>
           <ul>
-            <li>Brought in a new dynamic of high energy classes that engages the students in a positive learning environment; increased development speed of students by 25% and overall class attendance by 30%. </li>
-            <li> In charge of the organization of large classes to maximize the use of all resources and to ensure a high level of efficiency at all times. </li>
-            <li>Utilized strong interpersonal and communication skills to instruct students of all levels; commended many times for great energy and positivity towards others.</li>
+            <li>Bring in a new dynamic of high energy classes that engages the students in a positive learning environment, which increases the development speed of students by 25% and overall class attendance by 30%. </li>
+            <li>Am in charge of the organization of large classes that maximize the use of all resources and to ensure a high level of efficiency at all times. </li>
+            <li>Utilize strong interpersonal and communication skills to instruct students of all levels.</li>
           </ul>
-          <p className="text">I am currently seeking an internship experience for the Summer of 2020 in the Computer Science field so I can further broaden my studies as I get a glimpse into a possible future field for myself.</p>
+          <p className="text"> <strong>A major career goal of mine is to:</strong> find an internship experience for the Summer of 2020 in the Computer Science field so I can further broaden my studies as I get a glimpse into a possible field that I may be working post-graduation.</p>
           </Collapsible>
         </div>
        <Footer/>

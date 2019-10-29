@@ -63,7 +63,9 @@ slideWidth = () => {
     document.body.style.backgroundColor= "white";
 
         return (
+
           <div className="down">
+
             <Container fluid>
         <Row>
           <Col md="2"></Col>
@@ -92,19 +94,25 @@ slideWidth = () => {
             <Typing.Reset count={1} delay={5000} />
 
         </Typing>
-          <div className="links">
-          <a className="links" href="https://github.com/Calvin-Yap" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="fontawesome" icon={['fab', 'github']} size="2x"/></a>
-          <a className="links" href="https://www.linkedin.com/in/calvin-yap-b83275193/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="fontawesome" icon={['fab', 'linkedin']} size="2x" /></a>
-          <a className="links" href={Resume} target="blank" rel="noopener noreferrer" ><FontAwesomeIcon className="fontawesome" icon={['fas', 'file']} size="2x" /></a>
-          <a className="links" href="mailto:calvin.yap@ryerson.ca"><FontAwesomeIcon className="fontawesome"icon={['fas', 'envelope']} size="2x" /></a>
-          <br/>
-          <button className="button1"><AnchorLink className="anchor" offset="65"  href='#me'>Who Am I?</AnchorLink></button>
-          </div>
+        
           
           
           </div></Col>
           <Col md="2"></Col>
 
+        </Row>
+        <Row>
+          <Col md="4"/>
+          <Col md="4">  <div className="links">
+          <a className="links" href="https://github.com/Calvin-Yap" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="fontawesome" icon={['fab', 'github']} size="2x"/></a>
+          <a className="links" href="https://www.linkedin.com/in/calvin-yap-b83275193/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="fontawesome" icon={['fab', 'linkedin']} size="2x" /></a>
+          <a className="links" href={Resume} target="blank" rel="noopener noreferrer" ><FontAwesomeIcon className="fontawesome" icon={['fas', 'file']} size="2x" /></a>
+          <a className="links" href="mailto:calvin.yap@ryerson.ca"><FontAwesomeIcon className="fontawesome"icon={['fas', 'envelope']} size="2x" /></a>
+          <br/>
+          <br/>
+          <button className="button1"><AnchorLink className="anchor" offset="65"  href='#me'>Who Am I?</AnchorLink></button>
+          </div></Col>
+          <Col md="4"/>
         </Row>
         </Container>
           <Particle/>
@@ -120,7 +128,7 @@ slideWidth = () => {
               <hr className="hrstyle"/>
               <p className="paragraph">Hi, welcome to my page!</p>
               <p className="paragraph">
-              I am a Computer Science Student at Ryerson University. I enjoy writing programs to solve problems in Java and Python. Also, I enjoy creating progressive web applications in my spare time to sharpen my skills not only as a programmer but also a web developer. Currently, I am looking for a cooperative education or internship program for Winter 2020 to further improve my skills as a programmer.               
+              I am a Computer Science Student at Ryerson University. I enjoy writing programs to solve problems in Java and Python. I also, enjoy developing progressive web applications in my spare time to sharpen my web development skills. Currently, I am looking for a Cooperative Education or Internship Program for the Summer of 2020 to further improve my skills as a programmer.               
                </p>
               <p className="interests"> Interests </p>
               <div className="spacer"/>
@@ -168,7 +176,7 @@ slideWidth = () => {
 
               </div>
               <br/>
-              <a  className="resumeLink" href={Resume} target="blank" rel="noopener noreferrer"><u>No time to browse the rest of my page. Heres my resume.</u></a>
+              <a  className="resumeLink" href={Resume} target="blank" rel="noopener noreferrer"><u>No time to browse the rest of my page. Here's my resume.</u></a>
              </Col>
              <Col md="6">
              <div className="slider">

@@ -14,6 +14,8 @@ class footer extends React.Component{
       <a className="bottomlinks" href="https://www.linkedin.com/in/calvin-yap-b83275193/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="fontawesome" icon={['fab', 'linkedin']} size="lg" /></a>
       <a className="bottomlinks" href={Resume} target="blank" rel="noopener noreferrer" ><FontAwesomeIcon className="fontawesomeFoot" icon={['fas', 'file']} size="lg" /></a>
       <a className="bottomlinks" href="mailto:calvin.yap@ryerson.ca"><FontAwesomeIcon className="fontawesomeFoot"icon={['fas', 'envelope']} size="lg" /></a>
+    <br/>
+    <br/>
     <p>Made by Calvin Yap </p>
     <p>&copy; 2018 Calvin Yap</p>
     </footer>
