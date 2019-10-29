@@ -22,7 +22,7 @@
   position: relative;
   margin-left: 15%;
   margin-right: 15%;
-  margin-top:8%;
+  margin-top:5%;
   padding-top:1%;
   padding-bottom: 2%;
   box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11),
@@ -33,21 +33,24 @@
   font-weight: bold;
   margin-left: 2%;
   padding-top: 2%;
-  padding-bottom: 2%;
+  
 }
 .text{
+  padding-top: 2%;
     font-size: 130%;
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-top: 3%;
+  text-align: left;
+  margin-left:2%;
+  margin-right: 2%;
 }
 
-.ryersonlogo{
-    margin-top: 1%;
-    margin-bottom: 1%;
-    margin-left: 40%;
+.RU{
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
-
+ul{
+  font-size: 120%;
+  color: black;
+}
 .aboutmephoto{
     border-radius: 10px;
     border: 1px black solid;
@@ -115,10 +118,7 @@
 text-align: center;
 margin-left:2%;
     }
-.tabletools{
-  margin-left:4%;
-  font-size: 120%;
-}
+
     .spacer1{
       padding-bottom: .5%;
     }
@@ -160,5 +160,5 @@ margin-left:2%;
       margin-left: 4%;
       margin-right: 4%;
       margin-top: 2%;
-      margin-bottom: 4%;
+ 
     }

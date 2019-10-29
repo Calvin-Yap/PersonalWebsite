@@ -5,11 +5,12 @@ import Slide from './Slide'
 import LeftArrow from './LeftArrow'
 import RightArrow from './RightArrow'
 import Particle from './particle'
+import Footer from '../Footer/footer'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Button, Container, Row, Col } from 'reactstrap';
 import { NavLink }  from "react-router-dom";
 import {VerticleButton  as ScrollUpButton} from "react-scroll-up-button";
-
+import Resume from '../../assets/CV.pdf'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 class Home extends React.Component{
@@ -94,8 +95,8 @@ slideWidth = () => {
           <div className="links">
           <a className="links" href="https://github.com/Calvin-Yap" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="fontawesome" icon={['fab', 'github']} size="2x"/></a>
           <a className="links" href="https://www.linkedin.com/in/calvin-yap-b83275193/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="fontawesome" icon={['fab', 'linkedin']} size="2x" /></a>
-          <a className="links" href="linkedman"><FontAwesomeIcon className="fontawesome" icon={['fas', 'file']} size="2x" /></a>
-          <a className="links" href="linkedman"><FontAwesomeIcon className="fontawesome"icon={['fas', 'envelope']} size="2x" /></a>
+          <a className="links" href={Resume} target="blank" rel="noopener noreferrer" ><FontAwesomeIcon className="fontawesome" icon={['fas', 'file']} size="2x" /></a>
+          <a className="links" href="mailto:calvin.yap@ryerson.ca"><FontAwesomeIcon className="fontawesome"icon={['fas', 'envelope']} size="2x" /></a>
           <br/>
           <button className="button1"><AnchorLink className="anchor" offset="65"  href='#me'>Who Am I?</AnchorLink></button>
           </div>
@@ -166,7 +167,8 @@ slideWidth = () => {
               <Button className="btn-custom"  size="lg"><NavLink className="aboutlink" to="/about">Learn More</NavLink></Button>
 
               </div>
-              <a className="paragraph">No time to browse the rest of my page. Heres my resume.</a>
+              <br/>
+              <a  className="resumeLink" href={Resume} target="blank" rel="noopener noreferrer"><u>No time to browse the rest of my page. Heres my resume.</u></a>
              </Col>
              <Col md="6">
              <div className="slider">
@@ -190,15 +192,8 @@ slideWidth = () => {
       </div>
 
 
-    <footer>
-    <a className="bottomlinks" href="https://github.com/Calvin-Yap"><FontAwesomeIcon className="fontawesome" icon={['fab', 'github']} size="lg" /></a>
-    <a className="bottomlinks" href="linkedman"><FontAwesomeIcon className="fontawesome" icon={['fab', 'linkedin']} size="lg" /></a>
-    <a className="bottomlinks" href="linkedman"><FontAwesomeIcon className="fontawesome" icon={['fas', 'file']} size="lg" /></a>
-    <a className="bottomlinks" href="linkedman"><FontAwesomeIcon className="fontawesome"icon={['fas', 'envelope']} size="lg" /></a>
+<Footer/>
 
-    <p>Made by Calvin Yap </p>
-    <p>&copy; 2018 Calvin Yap</p>
-    </footer>
     <ScrollUpButton />
 </div>
     );

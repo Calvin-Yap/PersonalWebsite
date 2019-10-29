@@ -28,17 +28,19 @@ toggle() {
         <NavLink className="normal" to="/about"><span className="linkspan">ABOUT</span></NavLink>
         <NavLink className="normal" to="/projects"><span className="linkspan">PROJECTS</span></NavLink>
         <button className="link" onClick={this.toggle}><span className="linkspan">CONTACT</span></button>
+      
        <Modal isOpen={this.state.modal} toggle={this.toggle}
               fade={this.state.fade}
               className={this.props.className}>
-           <ModalHeader toggle={this.toggle}>Modal title</ModalHeader>
+           <ModalHeader className="modalshift" toggle={this.toggle}><h1 className="heading">Contact Me!</h1></ModalHeader>
            <ModalBody>
-
+            <p className="modalbody">Phone: (647)-990-3688</p>
+            <p className="modalbody">Email: calvin.yap@ryerson.ca</p>
+            <p className="modalbody">Feel free leave me an email about anything!</p>
 
            </ModalBody>
            <ModalFooter>
-               <Button color="primary" onClick={this.toggle}>Do Something</Button>{' '}
-               <Button color="secondary" onClick={this.toggle}>Cancel</Button>
+               <Button color="secondary" onClick={this.toggle}>Close</Button>
            </ModalFooter>
        </Modal>
 

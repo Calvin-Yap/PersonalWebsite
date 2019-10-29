@@ -3,7 +3,7 @@ import './about.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Collapsible from 'react-collapsible';
 import { Container, Row, Col, UncontrolledCollapse, Button  } from 'reactstrap';
-
+import Footer from '../Footer/footer'
 class About extends React.Component{
   render(){
     document.body.style.backgroundColor= "white";
@@ -46,108 +46,32 @@ class About extends React.Component{
           <p className="aboutme">
         I am a third year Computer Science student studying at Ryerson University. In terms of my studies am currently interested in the fields of artificial intelligence and data sciences. In addition, Computer Graphics is another field that I am intrigued by as I love playing indie games so it would be a dream for me to create or help the development of one. I am always eager and excited to learn new things and create new projects that both further my learning and help others. In my spare time you can find me enjoying walks with my dog, practicing martial arts, playing Frisbee, and weightlifting. 
         </p>   
-
-             
-
           <div>
             <h1 className="subabouthead">Goals</h1>
-          </div>
-          <h1 className="subabouthead">Langauges</h1>
-          <p>As a Computer Science student I like to be versitile, being fluent in different programming languages.</p> 
-          <div className="tabletools">          
-            <Container fluid>
-              <Row>
-              <Col md="3">
-                Most Familiar
-                </Col>
-                <Col md="9">
-                  Projects or Experience using the language
-                </Col>
-
-              </Row>
-              <Row>
-              <Col md="3">
-                Java
-                </Col>
-              <Col md="9">
-              I have completed multiple courses in which we sol
-              </Col>
-              </Row>
-              <Row>
-              <Col md="3">
-              C  
-              </Col>
-              </Row>
-              <Row><Col md="3">
-                Bash
-                </Col>
-                </Row>
-                <Row>
-                <Col md="3">
-                React.js  
-                </Col>
-                </Row>
-                <Row>
-                <Col md="3">
-                HTML/CSS  
-                </Col>
-                </Row>
-                
-            </Container>
-            <br/>
-            <Container fluid>
-            <Row>
-              <Col md="3">
-              Some Experience
-                </Col>
-                <Col md="9">
-                Projects or Experience using the language
-                </Col>
-              </Row>
-              <Row>
-              <Col md="3">
-                C++
-                </Col>
-              </Row>
-              <Row>
-              <Col md="3">
-              Smalltalk
-              </Col>
-              </Row>
-              <Row><Col md="3">
-                Rust
-                </Col>
-                </Row>
-                
-            </Container>
-            <br/>
-            <Container fluid>
-            <Row>
-              <Col md="3">
-                Currently Learning
-                </Col>
-                <Col md="9">
-                Projects or Experience using the language
-                </Col>
-              </Row>
-              <Row>
-              <Col md="3">
-                Python
-                </Col>
-              </Row>
-              <Row>
-              <Col md="3">
-              OpenGL 
-              </Col>
-              </Row>
-              <Row><Col md="3">
-                OracleDB/SQL
-                </Col>
-                </Row>
-            </Container>
-
-            
-          </div>
+           <p className="aboutme"> I always like to set goals for myself to track personal progress and try to achieve bigger feats! For this term I had several academic goals as well as personal goals.</p>
+         
+           <Container fluid>
+           <Row>
+             <Col md="6">
+             <p className="aboutme">Academic Goals</p>
+          <ul>
+            <li>Try and find a Summer Internship Experience.</li>
+            <li>Try and obtain a 3.5 GPA for this semester.</li>
+            <li>Create better studying habits before exams.</li>
+          </ul>
+             </Col>
+             <Col md="6">
+             <p className="aboutme">Personal Goals</p>
+          <ul>
+            <li>Maintain and continue my gym routine for the school year.</li>
+            <li>Lift More!</li>
+            <li>Play more volleyball.</li>
+          </ul>
+             </Col>
+           </Row>
+         </Container> 
+         
+          </div> 
           <div>
           <h1 className="subabouthead">Interests</h1>
           </div>
@@ -186,8 +110,7 @@ class About extends React.Component{
                       More
                     </Button>
                     <UncontrolledCollapse  toggler="#webdev">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    </p>   
+                    <p>In the past during high school all I have played around with basic HTML and CSS websites and it was not until University where I have taken a course which specializes in this. During, second year I took a course called CPS530 which was an introductory course to web development. Here is where I learned the basics of different front-end and back-end frameworks and how the whole process worked. Then I saw some of my other friends creating their own web portfolios and thought it would’ve been a good idea to make one for myself and taaadaa this is how this site became into existence. Now I work on my web development skills in my spare time, creating web applications here and there and always trying to update my portfolio. Next steps for me in this field is to learn better ways to create a more user friendly UI. </p>   
                     </UncontrolledCollapse>
                     </Col>
                     <Col md="3">
@@ -195,7 +118,7 @@ class About extends React.Component{
                       more
                     </Button>
                     <UncontrolledCollapse toggler="#sports">
-                    <p>hi</p>
+                    <p>I would like to identify as an active individual who enjoys a lot of team sports. Growing up I always played basketball and volleyball with my friends during recess and I still enjoy playing recreationally today. In addition, as a child I was enrolled into Karate classes since I had a love for Bruce Lee and Jackie Chan movies and I immediately fell in love with it. Karate has been a staple in my life since 2007 till now and for personal achievement I have gotten up to the rank of third dan black belt (3rd-degree black belt). Karate has taught me many life skills such as self-confidence, responsibility, perseverance, and many social skills. Today, I still teach part time as it is something that I enjoy doing and it always challenges me to problem solve as I try to organize and instruct large classes of many ages. As for competitive team sports, ultimate frisbee was a sport that I accidently tried out for during high school and really enjoyed. It taught me how valuable communication is in a team dynamic and how to win as a team. </p>
                     </UncontrolledCollapse>
                     </Col>
                     <Col md="3">
@@ -203,7 +126,7 @@ class About extends React.Component{
                       more
                     </Button>
                     <UncontrolledCollapse toggler="#fitness">
-                    <p>hi</p>
+                    <p>Growing up I was always a lean and skinny boy which has always somewhat bothered me. So, one day one of my best friends Patrick introduced me to lifting and going to the gym and that really is what pushed me to try and change my physical appearance. In one summer, I gained 20lbs and slowly integrated going to the gym into my daily routine. I gone from not being able to lift even the bar all the way to hitting 155lbs for bench press, 315 for deadlift, and 225 for squatting. Being able to hit these numbers in such a short period of time really reassured me that I was on the right track and was a huge confidence booster to myself. These numbers are definitely not something to brag about, but it is a start and I am continuing to try to best these numbers every school term.</p>
                     </UncontrolledCollapse>
                     </Col>
                     <Col md="3">
@@ -211,7 +134,7 @@ class About extends React.Component{
                       more
                     </Button>
                     <UncontrolledCollapse toggler="#java">
-                    <p>hi</p>
+                    <p>As a computer science student, it is clear that I love to code! Personally, I like the problem-solving aspect of coding and it is the most satisfying feeling to finally solve a hard problem or to make a program that helps someone with some task no matter how simple it is.</p>
                     </UncontrolledCollapse>
                     </Col>
                   </Row>
@@ -247,7 +170,7 @@ class About extends React.Component{
                       more
                     </Button>
                     <UncontrolledCollapse toggler="#pets">
-                    <p>hi</p>
+                    <p>I love playing with my dog Pumpkin, who is currently 2 years old. Unfortunately, she suffers from a rare form of canine cancer and will not be with the family very soon. So for the next year I will be trying to provide everything and anything to make her last year a very memorable one!</p>
                     </UncontrolledCollapse>
                     </Col>
                     <Col md="3">
@@ -255,7 +178,7 @@ class About extends React.Component{
                       more
                     </Button>
                     <UncontrolledCollapse toggler="#music">
-                    <p>hi</p>
+                    <p>I recently got interested in DIY car modifying and am a proud owner of a 2019 Subaru WRX. Some future modifications that I would like to do are: adding in a new cold air intake, adding a cat-back exhaust system, and a stage 1 tune!</p>
                     </UncontrolledCollapse>
                     </Col>
                     <Col md="3">
@@ -263,7 +186,7 @@ class About extends React.Component{
                       more
                     </Button>
                     <UncontrolledCollapse toggler="#gaming">
-                    <p>hi</p>
+                    <p>I have always been a supporter of indie games as I find the quality of the gameplay and storylines are usually better thought of and implemented. Game mechanics are unique and different from bigger title games, which always make them refreshing and new to play. Some games I am currently playing are: The Binding of Isaac, Slay the Spire, Dead Cells, Dicey Dungeons, Streets of Rouge, and many more! It would be a dream of mine to one day be part of a development team for a project like this.</p>
                     </UncontrolledCollapse>
                     </Col>
                     <Col md="3">
@@ -271,7 +194,7 @@ class About extends React.Component{
                       more
                     </Button>
                     <UncontrolledCollapse toggler="#travel">
-                    <p>hi</p>
+                    <p>Last year was my first solo trip without my family to Los Angeles and it was a blast. One day I would like to travel and photograph the world!</p>
                     </UncontrolledCollapse>
                     </Col>
                   </Row>
@@ -283,29 +206,29 @@ class About extends React.Component{
         <div className="javaBox">
           <Collapsible trigger="Education">
           <section id='Education'/>
-          <img className="ryersonlogo" src="https://i.imgur.com/6dXhSzX.png"/>
-          <p className="text">I am currently a second year student studying Computer Science at Ryerson University. Here I gain the proper experience for coding languages while learning about core concepts such as data structures, algorithms, networks, and operating systems. My interests lie towards the fields of software design, computer vision, and artifical intelligence.</p>
+          <Container className="RU" fluid>
+            <Row>
+               <Col md="4"/> 
+               <Col md="4"><img src="https://i.imgur.com/6dXhSzX.png" alt="ryersonlogo"/></Col> 
+               <Col md="4"/> 
+            </Row>
+          </Container>
+          <p className="text">I am currently a third year student studying Computer Science at Ryerson University. Here I gain the proper experience for coding languages while learning about core concepts such as data structures, algorithms, networks, and operating systems. My interests lie towards the fields of software design, computer vision, and artifical intelligence.</p>
           </Collapsible>
         </div>
         <div className="javaBox">
         <Collapsible trigger="Experience">
           <section id='Experience'/>
-          <p className="text">Currently, I am a freelance web desginer creating websites for fun and to assist friends and families trying to get a website template started.
-          I am currently searching for an internship to further enhance my skills and expand my horizons in the web development field.
-          </p>
+          <p className="text">Currently I am working part-time for Northern Karate where I: </p>
+          <ul>
+            <li>Brought in a new dynamic of high energy classes that engages the students in a positive learning environment; increased development speed of students by 25% and overall class attendance by 30%. </li>
+            <li> In charge of the organization of large classes to maximize the use of all resources and to ensure a high level of efficiency at all times. </li>
+            <li>Utilized strong interpersonal and communication skills to instruct students of all levels; commended many times for great energy and positivity towards others.</li>
+          </ul>
+          <p className="text">I am currently seeking an internship experience for the Summer of 2020 in the Computer Science field so I can further broaden my studies as I get a glimpse into a possible future field for myself.</p>
           </Collapsible>
         </div>
-       
-        <footer>
-        <a className="bottomlinks" href="https://github.com/Calvin-Yap"><FontAwesomeIcon className="fontawesome" icon={['fab', 'github']} size="lg" /></a>
-        <a className="bottomlinks" href="linkedman"><FontAwesomeIcon className="fontawesome" icon={['fab', 'linkedin']} size="lg" /></a>
-        <a className="bottomlinks" href="linkedman"><FontAwesomeIcon className="fontawesome" icon={['fas', 'file']} size="lg" /></a>
-        <a className="bottomlinks" href="linkedman"><FontAwesomeIcon className="fontawesome"icon={['fas', 'envelope']} size="lg" /></a>
-        <br/>
-        <br/>
-        <p>Made by Calvin Yap </p>
-        <p>&copy; 2018 Calvin Yap</p>
-        </footer>
+       <Footer/>
     </div>
     )
   }

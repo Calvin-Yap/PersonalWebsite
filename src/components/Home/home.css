@@ -150,10 +150,7 @@ transition: .7s;
   transform: scale(1.5);
   color:black;
 }
-.bottomlinks{
-  margin-right: 1%;
-  padding-left: 1%;
-}
+
 footer{
   padding-top: 2%;
   background: #000000;
@@ -367,4 +364,19 @@ color: white;
 }
 .spacer{
   margin: 4%
+}
+
+a.resumeLink{
+  font-family: 'Roboto', sans-serif;
+color: white;
+font-size: 160%;
+margin-top: 2%;
+padding-left: 5%;
+text-decoration: none;
+transition: .7s;
+}
+a.resumeLink:hover{
+
+  text-decoration: none;
+  color: #E14658;
 }
